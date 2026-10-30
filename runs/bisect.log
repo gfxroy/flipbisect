@@ -1,0 +1,10 @@
+· launching llamacpp parallel=1, cache_prompt=False, flash_attn=on
+  -> 0/32 unstable runs (32.5s)
+· launching llamacpp threads=8, ubatch=32, parallel=8
+  -> 17/32 unstable runs, 3/4 prompts differ from baseline (19.5s)
+· launching llamacpp threads=8, ubatch=32, parallel=1, cache_prompt=False, flash_attn=on
+  -> 18/32 unstable runs, 2/4 prompts differ from baseline (24.9s)
+· launching llamacpp threads=8, parallel=1, cache_prompt=False, flash_attn=on
+  -> 20/32 unstable runs, 3/4 prompts differ from baseline (22.7s)
+minimal: {'threads': 8}
+wrote runs/bisect.json runs/bisect.html

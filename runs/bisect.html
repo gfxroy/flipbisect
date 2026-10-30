@@ -1,0 +1,21 @@
+<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>flipbisect report</title><style>
+:root{--bg:#000;--fg:#ededed;--mute:#8a8a8a;--line:#222;--card:#0a0a0a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:980px;margin:0 auto;padding:64px 24px 96px}
+h1{font-size:40px;letter-spacing:-.03em;line-height:1.1;margin:0 0 12px;font-weight:600}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--mute);font-weight:500;margin:56px 0 16px}
+p.lead{color:var(--mute);font-size:17px;margin:0 0 32px;max-width:640px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.kpi{background:var(--card);padding:20px}.kpi b{display:block;font-size:28px;font-weight:600;letter-spacing:-.02em}.kpi span{color:var(--mute);font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mute);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+code,.mono{font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;font-size:13px}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;border:1px solid #333;font-size:12px}
+.pill.bad{background:#fff;color:#000;border-color:#fff}.pill.tie{border-style:dashed}
+.split{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:10px 0;font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:13px;white-space:pre-wrap;word-break:break-word}
+.split .a{background:#fff;color:#000;padding:0 3px;border-radius:3px}.split .b{border:1px solid #fff;padding:0 3px;border-radius:3px}
+.bar{height:6px;background:#1a1a1a;border-radius:3px;overflow:hidden;min-width:80px}.bar i{display:block;height:100%;background:#fff}
+.verdict{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--card);font-size:18px}
+footer{color:var(--mute);font-size:12px;margin-top:64px}
+</style><main><h1>The setting that flips your output.</h1><p class=lead>Identical temperature-0 requests replayed under different serving conditions.</p><div class=verdict>Minimal change that reproduces the divergence: <code>threads=8</code></div><h2>Steps</h2><table><tr><th>applied to good config</th><th>result</th><th>unstable runs</th></tr><tr><td class=mono>threads=8, ubatch=32</td><td><span class="pill bad">divergence</span></td><td>18</td></tr><tr><td class=mono>threads=8</td><td><span class="pill bad">divergence</span></td><td>20</td></tr></table><h2>First split under the minimal config</h2><div class="split"><span style="color:#8a8a8a">solo-warm · token 4  margin 0.2965 nats</span>
+…<span class="a"> is</span> → <span class="b"> appears</span></div><footer>flipbisect · backend: llamacpp · model: smol360.gguf · prompts: 4 · repeats: 2 · seconds: 99.5</footer></main></html>

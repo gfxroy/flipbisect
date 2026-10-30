@@ -1,0 +1,5389 @@
+{
+ "kind": "probe",
+ "meta": {
+  "server": "http://localhost:8091",
+  "model": "default",
+  "prompts": 4,
+  "repeats": 3,
+  "seconds": 35.1
+ },
+ "result": {
+  "prompts": [
+   {
+    "prompt": "Explain why the sky is blue in three sentences.",
+    "reference": {
+     "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more than the longer wavelengths, like red",
+     "finish_reason": "length",
+     "latency_s": 0.816,
+     "tokens": [
+      {
+       "token": "\n",
+       "logprob": -0.7555290460586548,
+       "top": [
+        [
+         "\n",
+         -0.7555290460586548
+        ],
+        [
+         "",
+         -0.9323612451553345
+        ],
+        [
+         "\n\n",
+         -4.094116687774658
+        ],
+        [
+         " \n",
+         -4.1371846199035645
+        ],
+        [
+         " Use",
+         -4.4314703941345215
+        ]
+       ]
+      },
+      {
+       "token": "\n",
+       "logprob": -0.4827388823032379,
+       "top": [
+        [
+         "\n",
+         -0.4827388823032379
+        ],
+        [
+         "",
+         -1.4233115911483765
+        ],
+        [
+         "The",
+         -3.038630723953247
+        ],
+        [
+         " The",
+         -4.642599582672119
+        ],
+        [
+         "In",
+         -5.255208492279053
+        ]
+       ]
+      },
+      {
+       "token": "The",
+       "logprob": -0.8004061579704285,
+       "top": [
+        [
+         "The",
+         -0.8004061579704285
+        ],
+        [
+         "Your",
+         -2.9990317821502686
+        ],
+        [
+         "In",
+         -3.145447254180908
+        ],
+        [
+         "(",
+         -3.2099597454071045
+        ],
+        [
+         "Also",
+         -3.2471797466278076
+        ]
+       ]
+      },
+      {
+       "token": " sky",
+       "logprob": -0.2627003490924835,
+       "top": [
+        [
+         " sky",
+         -0.2627003490924835
+        ],
+        [
+         " color",
+         -3.0786221027374268
+        ],
+        [
+         " blue",
+         -3.7009518146514893
+        ],
+        [
+         " answer",
+         -3.831345796585083
+        ],
+        [
+         " sun",
+         -4.727456569671631
+        ]
+       ]
+      },
+      {
+       "token": " is",
+       "logprob": -0.706171452999115,
+       "top": [
+        [
+         " is",
+         -0.706171452999115
+        ],
+        [
+         " appears",
+         -0.7885631322860718
+        ],
+        [
+         " can",
+         -4.684004306793213
+        ],
+        [
+         ",",
+         -5.348883152008057
+        ],
+        [
+         "'s",
+         -5.437410831451416
+        ]
+       ]
+      },
+      {
+       "token": " blue",
+       "logprob": -0.05002798140048981,
+       "top": [
+        [
+         " blue",
+         -0.05002798140048981
+        ],
+        [
+         " a",
+         -4.527627944946289
+        ],
+        [
+         " colored",
+         -5.692594528198242
+        ],
+        [
+         " made",
+         -6.002033233642578
+        ],
+        [
+         " not",
+         -6.015415191650391
+        ]
+       ]
+      },
+      {
+       "token": " because",
+       "logprob": -0.20748870074748993,
+       "top": [
+        [
+         " because",
+         -0.20748870074748993
+        ],
+        [
+         " in",
+         -2.411954641342163
+        ],
+        [
+         " due",
+         -2.784230947494507
+        ],
+        [
+         " for",
+         -4.854457378387451
+        ],
+        [
+         " primarily",
+         -4.952674388885498
+        ]
+       ]
+      },
+      {
+       "token": " of",
+       "logprob": -0.8048025369644165,
+       "top": [
+        [
+         " of",
+         -0.8048025369644165
+        ],
+        [
+         " it",
+         -1.1918874979019165
+        ],
+        [
+         " the",
+         -2.1858508586883545
+        ],
+        [
+         " sunlight",
+         -3.494476795196533
+        ],
+        [
+         " when",
+         -3.9654529094696045
+        ]
+       ]
+      },
+      {
+       "token": " a",
+       "logprob": -0.17537935078144073,
+       "top": [
+        [
+         " a",
+         -0.17537935078144073
+        ],
+        [
+         " the",
+         -2.512241840362549
+        ],
+        [
+         " something",
+         -2.9460511207580566
+        ],
+        [
+         " tiny",
+         -4.733938694000244
+        ],
+        [
+         " sunlight",
+         -5.277235507965088
+        ]
+       ]
+      },
+      {
+       "token": " phenomenon",
+       "logprob": -0.4751798212528229,
+       "top": [
+        [
+         " phenomenon",
+         -0.4751798212528229
+        ],
+        [
+         " process",
+         -1.782924771308899
+        ],
+        [
+         " thing",
+         -2.859264373779297
+        ],
+        [
+         " combination",
+         -4.135244369506836
+        ],
+        [
+         " natural",
+         -4.286378860473633
+        ]
+       ]
+      },
+      {
+       "token": " called",
+       "logprob": -0.5013545751571655,
+       "top": [
+        [
+         " called",
+         -0.5013545751571655
+        ],
+        [
+         " known",
+         -0.9785884618759155
+        ],
+        [
+         " that",
+         -5.319471836090088
+        ],
+        [
+         " we",
+         -5.7615838050842285
+        ],
+        [
+         " where",
+         -6.3008809089660645
+        ]
+       ]
+      },
+      {
+       "token": " Ray",
+       "logprob": -0.4398074448108673,
+       "top": [
+        [
+         " Ray",
+         -0.4398074448108673
+        ],
+        [
+         " scattering",
+         -1.9199328422546387
+        ],
+        [
+         " the",
+         -2.071948528289795
+        ],
+        [
+         " *",
+         -3.9132513999938965
+        ],
+        [
+         " \"",
+         -4.704763889312744
+        ]
+       ]
+      },
+      {
+       "token": "leigh",
+       "logprob": -0.000515832391101867,
+       "top": [
+        [
+         "leigh",
+         -0.000515832391101867
+        ],
+        [
+         "-",
+         -9.217549324035645
+        ],
+        [
+         "'s",
+         -10.236054420471191
+        ],
+        [
+         " Sc",
+         -10.339380264282227
+        ],
+        [
+         "\u2013",
+         -10.432129859924316
+        ]
+       ]
+      },
+      {
+       "token": " scattering",
+       "logprob": -0.004800319205969572,
+       "top": [
+        [
+         " scattering",
+         -0.004800319205969572
+        ],
+        [
+         " Sc",
+         -6.051625728607178
+        ],
+        [
+         "'s",
+         -6.74635648727417
+        ],
+        [
+         " dispersion",
+         -8.355607032775879
+        ],
+        [
+         "\u2019",
+         -8.562511444091797
+        ]
+       ]
+      },
+      {
+       "token": ",",
+       "logprob": -0.4681392312049866,
+       "top": [
+        [
+         ",",
+         -0.4681392312049866
+        ],
+        [
+         ".",
+         -1.0769745111465454
+        ],
+        [
+         " in",
+         -3.658883571624756
+        ],
+        [
+         " which",
+         -6.415696620941162
+        ],
+        [
+         " that",
+         -7.2532782554626465
+        ]
+       ]
+      },
+      {
+       "token": " which",
+       "logprob": -0.33660924434661865,
+       "top": [
+        [
+         " which",
+         -0.33660924434661865
+        ],
+        [
+         " a",
+         -2.067312479019165
+        ],
+        [
+         " named",
+         -2.9622862339019775
+        ],
+        [
+         " also",
+         -2.984997034072876
+        ],
+        [
+         " where",
+         -3.8185694217681885
+        ]
+       ]
+      },
+      {
+       "token": " is",
+       "logprob": -0.5411654114723206,
+       "top": [
+        [
+         " is",
+         -0.5411654114723206
+        ],
+        [
+         " occurs",
+         -0.9582300782203674
+        ],
+        [
+         " happens",
+         -4.584303855895996
+        ],
+        [
+         " involves",
+         -5.1648359298706055
+        ],
+        [
+         " causes",
+         -5.826775550842285
+        ]
+       ]
+      },
+      {
+       "token": " a",
+       "logprob": -0.7208858132362366,
+       "top": [
+        [
+         " a",
+         -0.7208858132362366
+        ],
+        [
+         " the",
+         -1.6791187524795532
+        ],
+        [
+         " caused",
+         -2.352687358856201
+        ],
+        [
+         " named",
+         -2.5183463096618652
+        ],
+        [
+         " also",
+         -3.3710665702819824
+        ]
+       ]
+      },
+      {
+       "token": " type",
+       "logprob": -1.3203564882278442,
+       "top": [
+        [
+         " type",
+         -1.3203564882278442
+        ],
+        [
+         " result",
+         -1.4067670106887817
+        ],
+        [
+         " natural",
+         -1.7326738834381104
+        ],
+        [
+         " process",
+         -2.0684165954589844
+        ],
+        [
+         " scattering",
+         -2.9342384338378906
+        ]
+       ]
+      },
+      {
+       "token": " of",
+       "logprob": -1.1563368389033712e-05,
+       "top": [
+        [
+         " of",
+         -1.1563368389033712e-05
+        ],
+        [
+         "of",
+         -13.09669303894043
+        ],
+        [
+         " a",
+         -13.425863265991211
+        ],
+        [
+         "\n",
+         -13.508546829223633
+        ],
+        [
+         " ",
+         -13.679950714111328
+        ]
+       ]
+      },
+      {
+       "token": " optical",
+       "logprob": -0.22799189388751984,
+       "top": [
+        [
+         " optical",
+         -0.22799189388751984
+        ],
+        [
+         " scattering",
+         -2.629223585128784
+        ],
+        [
+         " light",
+         -2.6440722942352295
+        ],
+        [
+         " Ray",
+         -4.707215309143066
+        ],
+        [
+         " atmospheric",
+         -5.258969306945801
+        ]
+       ]
+      },
+      {
+       "token": " scattering",
+       "logprob": -0.9772522449493408,
+       "top": [
+        [
+         " scattering",
+         -0.9772522449493408
+        ],
+        [
+         " dispersion",
+         -1.5957175493240356
+        ],
+        [
+         " phenomenon",
+         -2.056851625442505
+        ],
+        [
+         " diffraction",
+         -2.233752489089966
+        ],
+        [
+         " refraction",
+         -2.2364494800567627
+        ]
+       ]
+      },
+      {
+       "token": " that",
+       "logprob": -0.26332831382751465,
+       "top": [
+        [
+         " that",
+         -0.26332831382751465
+        ],
+        [
+         " in",
+         -2.2171437740325928
+        ],
+        [
+         ".",
+         -2.996326208114624
+        ],
+        [
+         " caused",
+         -3.51157546043396
+        ],
+        [
+         " where",
+         -3.725053548812866
+        ]
+       ]
+      },
+      {
+       "token": " occurs",
+       "logprob": -0.02642747387290001,
+       "top": [
+        [
+         " occurs",
+         -0.02642747387290001
+        ],
+        [
+         " happens",
+         -4.207768440246582
+        ],
+        [
+         " is",
+         -5.149577617645264
+        ],
+        [
+         " primarily",
+         -6.588818550109863
+        ],
+        [
+         " causes",
+         -7.500262260437012
+        ]
+       ]
+      },
+      {
+       "token": " when",
+       "logprob": -0.1388653963804245,
+       "top": [
+        [
+         " when",
+         -0.1388653963804245
+        ],
+        [
+         " in",
+         -2.056511878967285
+        ],
+        [
+         " during",
+         -7.951367378234863
+        ],
+        [
+         " mainly",
+         -8.29663372039795
+        ],
+        [
+         " primarily",
+         -8.325318336486816
+        ]
+       ]
+      },
+      {
+       "token": " sunlight",
+       "logprob": -0.2506667673587799,
+       "top": [
+        [
+         " sunlight",
+         -0.2506667673587799
+        ],
+        [
+         " light",
+         -1.7873564958572388
+        ],
+        [
+         " small",
+         -3.9943573474884033
+        ],
+        [
+         " shorter",
+         -4.423697471618652
+        ],
+        [
+         " the",
+         -4.663712501525879
+        ]
+       ]
+      },
+      {
+       "token": " enters",
+       "logprob": -0.40080854296684265,
+       "top": [
+        [
+         " enters",
+         -0.40080854296684265
+        ],
+        [
+         " passes",
+         -1.9099905490875244
+        ],
+        [
+         " interacts",
+         -2.6461527347564697
+        ],
+        [
+         " encounters",
+         -2.6686060428619385
+        ],
+        [
+         " hits",
+         -4.860918045043945
+        ]
+       ]
+      },
+      {
+       "token": " Earth",
+       "logprob": -0.0976407527923584,
+       "top": [
+        [
+         " Earth",
+         -0.0976407527923584
+        ],
+        [
+         " the",
+         -2.623889684677124
+        ],
+        [
+         " our",
+         -4.3324198722839355
+        ],
+        [
+         " a",
+         -6.2178053855896
+        ],
+        [
+         " small",
+         -6.52435302734375
+        ]
+       ]
+      },
+      {
+       "token": "'s",
+       "logprob": -0.041152071207761765,
+       "top": [
+        [
+         "'s",
+         -0.041152071207761765
+        ],
+        [
+         "\u2019",
+         -3.2322587966918945
+        ],
+        [
+         "s",
+         -8.69382381439209
+        ],
+        [
+         "'",
+         -8.822548866271973
+        ],
+        [
+         "''",
+         -8.836710929870605
+        ]
+       ]
+      },
+      {
+       "token": " atmosphere",
+       "logprob": -0.00036246192757971585,
+       "top": [
+        [
+         " atmosphere",
+         -0.00036246192757971585
+        ],
+        [
+         " Atmosp",
+         -8.275470733642578
+        ],
+        [
+         " atmospheric",
+         -9.594354629516602
+        ],
+        [
+         " stratosphere",
+         -11.293596267700195
+        ],
+        [
+         " atmospheres",
+         -11.366853713989258
+        ]
+       ]
+      },
+      {
+       "token": " and",
+       "logprob": -0.47936469316482544,
+       "top": [
+        [
+         " and",
+         -0.47936469316482544
+        ],
+        [
+         ".",
+         -0.9804633259773254
+        ],
+        [
+         ",",
+         -5.544626712799072
+        ],
+        [
+         " at",
+         -7.46885347366333
+        ],
+        [
+         " from",
+         -7.527821063995361
+        ]
+       ]
+      },
+      {
+       "token": " encounters",
+       "logprob": -0.3358389735221863,
+       "top": [
+        [
+         " encounters",
+         -0.3358389735221863
+        ],
+        [
+         " is",
+         -2.1075901985168457
+        ],
+        [
+         " interacts",
+         -3.12695574760437
+        ],
+        [
+         " coll",
+         -3.3497016429901123
+        ],
+        [
+         " passes",
+         -3.954186201095581
+        ]
+       ]
+      },
+      {
+       "token": " tiny",
+       "logprob": -0.7824757099151611,
+       "top": [
+        [
+         " tiny",
+         -0.7824757099151611
+        ],
+        [
+         " molecules",
+         -1.1120846271514893
+        ],
+        [
+         " small",
+         -2.7085201740264893
+        ],
+        [
+         " the",
+         -3.1628735065460205
+        ],
+        [
+         " particles",
+         -3.5567657947540283
+        ]
+       ]
+      },
+      {
+       "token": " molecules",
+       "logprob": -0.06947380304336548,
+       "top": [
+        [
+         " molecules",
+         -0.06947380304336548
+        ],
+        [
+         " particles",
+         -2.909079074859619
+        ],
+        [
+         " water",
+         -4.480274677276611
+        ],
+        [
+         " droplets",
+         -8.473779678344727
+        ],
+        [
+         "particles",
+         -8.49927043914795
+        ]
+       ]
+      },
+      {
+       "token": " of",
+       "logprob": -0.8302685618400574,
+       "top": [
+        [
+         " of",
+         -0.8302685618400574
+        ],
+        [
+         " and",
+         -1.195617437362671
+        ],
+        [
+         " such",
+         -1.700347661972046
+        ],
+        [
+         " like",
+         -2.7632272243499756
+        ],
+        [
+         ",",
+         -4.435653209686279
+        ]
+       ]
+      },
+      {
+       "token": " gases",
+       "logprob": -0.03121010959148407,
+       "top": [
+        [
+         " gases",
+         -0.03121010959148407
+        ],
+        [
+         " gas",
+         -4.085744857788086
+        ],
+        [
+         " air",
+         -4.885568618774414
+        ],
+        [
+         " nitrogen",
+         -5.391258239746094
+        ],
+        [
+         " pollutants",
+         -7.648017883300781
+        ]
+       ]
+      },
+      {
+       "token": " such",
+       "logprob": -1.0203909873962402,
+       "top": [
+        [
+         " such",
+         -1.0203909873962402
+        ],
+        [
+         " present",
+         -1.5080161094665527
+        ],
+        [
+         " like",
+         -2.0598883628845215
+        ],
+        [
+         ",",
+         -2.1389822959899902
+        ],
+        [
+         ".",
+         -2.58620023727417
+        ]
+       ]
+      },
+      {
+       "token": " as",
+       "logprob": -1.5497327694902197e-05,
+       "top": [
+        [
+         " as",
+         -1.5497327694902197e-05
+        ],
+        [
+         " a",
+         -12.627704620361328
+        ],
+        [
+         " that",
+         -12.668210983276367
+        ],
+        [
+         " [",
+         -13.665016174316406
+        ],
+        [
+         " air",
+         -13.995333671569824
+        ]
+       ]
+      },
+      {
+       "token": " nitrogen",
+       "logprob": -0.12780363857746124,
+       "top": [
+        [
+         " nitrogen",
+         -0.12780363857746124
+        ],
+        [
+         " oxygen",
+         -2.1840569972991943
+        ],
+        [
+         " gases",
+         -6.392267227172852
+        ],
+        [
+         " air",
+         -6.602640151977539
+        ],
+        [
+         " Nitrogen",
+         -6.988869667053223
+        ]
+       ]
+      },
+      {
+       "token": " and",
+       "logprob": -0.10228603333234787,
+       "top": [
+        [
+         " and",
+         -0.10228603333234787
+        ],
+        [
+         ",",
+         -2.5336270332336426
+        ],
+        [
+         " (",
+         -4.066990375518799
+        ],
+        [
+         " or",
+         -7.918226718902588
+        ],
+        [
+         " gas",
+         -9.380182266235352
+        ]
+       ]
+      },
+      {
+       "token": " oxygen",
+       "logprob": -0.003195319091901183,
+       "top": [
+        [
+         " oxygen",
+         -0.003195319091901183
+        ],
+        [
+         " ozone",
+         -6.11063814163208
+        ],
+        [
+         " dust",
+         -8.624561309814453
+        ],
+        [
+         " Oxygen",
+         -8.756657600402832
+        ],
+        [
+         " helium",
+         -8.810713768005371
+        ]
+       ]
+      },
+      {
+       "token": ".",
+       "logprob": -0.0549531951546669,
+       "top": [
+        [
+         ".",
+         -0.0549531951546669
+        ],
+        [
+         ",",
+         -3.8110508918762207
+        ],
+        [
+         " in",
+         -4.214203357696533
+        ],
+        [
+         " that",
+         -5.221664905548096
+        ],
+        [
+         " (",
+         -5.595348834991455
+        ]
+       ]
+      },
+      {
+       "token": " These",
+       "logprob": -0.2873004376888275,
+       "top": [
+        [
+         " These",
+         -0.2873004376888275
+        ],
+        [
+         " When",
+         -2.661743402481079
+        ],
+        [
+         " The",
+         -3.2375338077545166
+        ],
+        [
+         " As",
+         -3.4027180671691895
+        ],
+        [
+         " This",
+         -3.905158281326294
+        ]
+       ]
+      },
+      {
+       "token": " molecules",
+       "logprob": -0.0712537169456482,
+       "top": [
+        [
+         " molecules",
+         -0.0712537169456482
+        ],
+        [
+         " gases",
+         -3.184818983078003
+        ],
+        [
+         " small",
+         -4.933676719665527
+        ],
+        [
+         " tiny",
+         -5.037999153137207
+        ],
+        [
+         " particles",
+         -5.635729789733887
+        ]
+       ]
+      },
+      {
+       "token": " scatter",
+       "logprob": -0.289741575717926,
+       "top": [
+        [
+         " scatter",
+         -0.289741575717926
+        ],
+        [
+         ",",
+         -2.3504810333251953
+        ],
+        [
+         " absorb",
+         -3.0110721588134766
+        ],
+        [
+         " are",
+         -3.1393051147460938
+        ],
+        [
+         " act",
+         -4.150873184204102
+        ]
+       ]
+      },
+      {
+       "token": " the",
+       "logprob": -0.3733632564544678,
+       "top": [
+        [
+         " the",
+         -0.3733632564544678
+        ],
+        [
+         " shorter",
+         -1.492948293685913
+        ],
+        [
+         " short",
+         -3.445594549179077
+        ],
+        [
+         " light",
+         -3.7862260341644287
+        ],
+        [
+         ",",
+         -4.101259231567383
+        ]
+       ]
+      },
+      {
+       "token": " shorter",
+       "logprob": -0.22984126210212708,
+       "top": [
+        [
+         " shorter",
+         -0.22984126210212708
+        ],
+        [
+         " light",
+         -1.9750099182128906
+        ],
+        [
+         " blue",
+         -3.032886505126953
+        ],
+        [
+         " longer",
+         -5.098642349243164
+        ],
+        [
+         " short",
+         -5.119878768920898
+        ]
+       ]
+      },
+      {
+       "token": " wavelengths",
+       "logprob": -0.8403267860412598,
+       "top": [
+        [
+         " wavelengths",
+         -0.8403267860412598
+        ],
+        [
+         " wavelength",
+         -0.997681200504303
+        ],
+        [
+         ",",
+         -2.2216858863830566
+        ],
+        [
+         " blue",
+         -3.0104165077209473
+        ],
+        [
+         "-",
+         -3.4228577613830566
+        ]
+       ]
+      },
+      {
+       "token": " of",
+       "logprob": -0.028080036863684654,
+       "top": [
+        [
+         " of",
+         -0.028080036863684654
+        ],
+        [
+         ",",
+         -3.70361328125
+        ],
+        [
+         " (",
+         -6.689018249511719
+        ],
+        [
+         " in",
+         -7.730884552001953
+        ],
+        [
+         " or",
+         -7.755958557128906
+        ]
+       ]
+      },
+      {
+       "token": " light",
+       "logprob": -0.08527206629514694,
+       "top": [
+        [
+         " light",
+         -0.08527206629514694
+        ],
+        [
+         " the",
+         -2.7721197605133057
+        ],
+        [
+         " sunlight",
+         -4.2488555908203125
+        ],
+        [
+         " visible",
+         -6.245235919952393
+        ],
+        [
+         " blue",
+         -6.298933506011963
+        ]
+       ]
+      },
+      {
+       "token": ",",
+       "logprob": -0.234202042222023,
+       "top": [
+        [
+         ",",
+         -0.234202042222023
+        ],
+        [
+         " more",
+         -2.057762622833252
+        ],
+        [
+         " in",
+         -3.233585834503174
+        ],
+        [
+         " (",
+         -4.01420259475708
+        ],
+        [
+         " \u2013",
+         -5.108219623565674
+        ]
+       ]
+      },
+      {
+       "token": " like",
+       "logprob": -0.898962676525116,
+       "top": [
+        [
+         " like",
+         -0.898962676525116
+        ],
+        [
+         " such",
+         -1.0291715860366821
+        ],
+        [
+         " including",
+         -2.110821485519409
+        ],
+        [
+         " or",
+         -3.2117505073547363
+        ],
+        [
+         " which",
+         -3.313976764678955
+        ]
+       ]
+      },
+      {
+       "token": " blue",
+       "logprob": -0.01777656190097332,
+       "top": [
+        [
+         " blue",
+         -0.01777656190097332
+        ],
+        [
+         " violet",
+         -4.63055419921875
+        ],
+        [
+         " blues",
+         -5.858564376831055
+        ],
+        [
+         " red",
+         -6.296274185180664
+        ],
+        [
+         " the",
+         -6.743486404418945
+        ]
+       ]
+      },
+      {
+       "token": " and",
+       "logprob": -0.016451295465230942,
+       "top": [
+        [
+         " and",
+         -0.016451295465230942
+        ],
+        [
+         ",",
+         -4.375326633453369
+        ],
+        [
+         " light",
+         -5.914032459259033
+        ],
+        [
+         " or",
+         -7.188995838165283
+        ],
+        [
+         " color",
+         -9.632070541381836
+        ]
+       ]
+      },
+      {
+       "token": " violet",
+       "logprob": -0.006034005433320999,
+       "top": [
+        [
+         " violet",
+         -0.006034005433320999
+        ],
+        [
+         " green",
+         -5.723170280456543
+        ],
+        [
+         " blue",
+         -7.313878059387207
+        ],
+        [
+         " v",
+         -7.466498374938965
+        ],
+        [
+         " ultraviolet",
+         -7.91396427154541
+        ]
+       ]
+      },
+      {
+       "token": ",",
+       "logprob": -0.020413454622030258,
+       "top": [
+        [
+         ",",
+         -0.020413454622030258
+        ],
+        [
+         " light",
+         -4.586052894592285
+        ],
+        [
+         ".",
+         -5.3773393630981445
+        ],
+        [
+         " (",
+         -5.968047142028809
+        ],
+        [
+         " rays",
+         -7.344113349914551
+        ]
+       ]
+      },
+      {
+       "token": " more",
+       "logprob": -0.5841057896614075,
+       "top": [
+        [
+         " more",
+         -0.5841057896614075
+        ],
+        [
+         " in",
+         -1.310284972190857
+        ],
+        [
+         " much",
+         -2.6745200157165527
+        ],
+        [
+         " to",
+         -2.831366777420044
+        ],
+        [
+         " which",
+         -4.322238445281982
+        ]
+       ]
+      },
+      {
+       "token": " than",
+       "logprob": -0.01961921900510788,
+       "top": [
+        [
+         " than",
+         -0.01961921900510788
+        ],
+        [
+         " efficiently",
+         -5.232450485229492
+        ],
+        [
+         " strongly",
+         -5.5386199951171875
+        ],
+        [
+         " effectively",
+         -5.706972599029541
+        ],
+        [
+         " evenly",
+         -7.265053749084473
+        ]
+       ]
+      },
+      {
+       "token": " the",
+       "logprob": -0.3277832269668579,
+       "top": [
+        [
+         " the",
+         -0.3277832269668579
+        ],
+        [
+         " longer",
+         -1.5299888849258423
+        ],
+        [
+         " they",
+         -3.139871120452881
+        ],
+        [
+         " other",
+         -4.194619655609131
+        ],
+        [
+         " shorter",
+         -6.124679088592529
+        ]
+       ]
+      },
+      {
+       "token": " longer",
+       "logprob": -0.00219376920722425,
+       "top": [
+        [
+         " longer",
+         -0.00219376920722425
+        ],
+        [
+         " other",
+         -6.869141101837158
+        ],
+        [
+         " long",
+         -7.42473840713501
+        ],
+        [
+         " shorter",
+         -8.855733871459961
+        ],
+        [
+         " longest",
+         -9.375345230102539
+        ]
+       ]
+      },
+      {
+       "token": " wavelengths",
+       "logprob": -0.03985366225242615,
+       "top": [
+        [
+         " wavelengths",
+         -0.03985366225242615
+        ],
+        [
+         ",",
+         -3.8200430870056152
+        ],
+        [
+         " wavelength",
+         -4.702609539031982
+        ],
+        [
+         " ones",
+         -5.317372798919678
+        ],
+        [
+         " light",
+         -7.027860164642334
+        ]
+       ]
+      },
+      {
+       "token": ",",
+       "logprob": -0.19486431777477264,
+       "top": [
+        [
+         ",",
+         -0.19486431777477264
+        ],
+        [
+         " of",
+         -2.1229591369628906
+        ],
+        [
+         " like",
+         -3.5973243713378906
+        ],
+        [
+         ".",
+         -3.7674007415771484
+        ],
+        [
+         " that",
+         -6.065185546875
+        ]
+       ]
+      },
+      {
+       "token": " like",
+       "logprob": -0.19763150811195374,
+       "top": [
+        [
+         " like",
+         -0.19763150811195374
+        ],
+        [
+         " such",
+         -2.7387003898620605
+        ],
+        [
+         " which",
+         -3.547881603240967
+        ],
+        [
+         " giving",
+         -4.270823955535889
+        ],
+        [
+         " causing",
+         -4.8401923179626465
+        ]
+       ]
+      },
+      {
+       "token": " red",
+       "logprob": -0.1744397133588791,
+       "top": [
+        [
+         " red",
+         -0.1744397133588791
+        ],
+        [
+         " orange",
+         -2.716700792312622
+        ],
+        [
+         " blue",
+         -3.4320766925811768
+        ],
+        [
+         " yellow",
+         -3.5689117908477783
+        ],
+        [
+         " green",
+         -4.36154842376709
+        ]
+       ]
+      }
+     ]
+    },
+    "runs": [
+     {
+      "condition": "solo-warm",
+      "repeat": 0,
+      "verdict": "divergence",
+      "position": 51,
+      "ref_token": " like",
+      "got_token": " such",
+      "margin": 0.130209,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.011375,
+      "swing": 0.141584,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "ncounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light,",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, such as blue and violet, more than the longer wavelengths, such"
+     },
+     {
+      "condition": "solo-warm",
+      "repeat": 1,
+      "verdict": "divergence",
+      "position": 51,
+      "ref_token": " like",
+      "got_token": " such",
+      "margin": 0.130209,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.011375,
+      "swing": 0.141584,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "ncounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light,",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, such as blue and violet, more than the longer wavelengths, such"
+     },
+     {
+      "condition": "solo-warm",
+      "repeat": 2,
+      "verdict": "divergence",
+      "position": 51,
+      "ref_token": " like",
+      "got_token": " such",
+      "margin": 0.130209,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.011375,
+      "swing": 0.141584,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "ncounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light,",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, such as blue and violet, more than the longer wavelengths, such"
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 0,
+      "verdict": "near-tie",
+      "position": 18,
+      "ref_token": " type",
+      "got_token": " result",
+      "margin": 0.086411,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.016186,
+      "swing": 0.102597,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a result of the interaction between sunlight and Earth's atmosphere. When sunlight enters the Earth's atmosphere, it encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, such as blue and violet,"
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 1,
+      "verdict": "near-tie",
+      "position": 4,
+      "ref_token": " is",
+      "got_token": " appears",
+      "margin": 0.082392,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.093561,
+      "swing": 0.175953,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "\n\nThe sky",
+      "text": "\n\nThe sky appears blue because of a phenomenon called Rayleigh scattering, which is a result of the interaction between sunlight and Earth's atmosphere. When sunlight enters the Earth's atmosphere, it encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more"
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 2,
+      "verdict": "near-tie",
+      "position": 4,
+      "ref_token": " is",
+      "got_token": " appears",
+      "margin": 0.082392,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.093561,
+      "swing": 0.175953,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "\n\nThe sky",
+      "text": "\n\nThe sky appears blue because of a phenomenon called Rayleigh scattering, which is a result of the interaction between sunlight and Earth's atmosphere. When sunlight enters the Earth's atmosphere, it encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more"
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 0,
+      "verdict": "near-tie",
+      "position": 4,
+      "ref_token": " is",
+      "got_token": " appears",
+      "margin": 0.082392,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.093561,
+      "swing": 0.175953,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "\n\nThe sky",
+      "text": "\n\nThe sky appears blue because of a phenomenon called Rayleigh scattering, which is a result of the interaction between sunlight and Earth's atmosphere. When sunlight enters the Earth's atmosphere, it encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more"
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more than the longer wavelengths, like red"
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more than the longer wavelengths, like red"
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 0,
+      "verdict": "near-tie",
+      "position": 4,
+      "ref_token": " is",
+      "got_token": " appears",
+      "margin": 0.082392,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.093561,
+      "swing": 0.175953,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "\n\nThe sky",
+      "text": "\n\nThe sky appears blue because of a phenomenon called Rayleigh scattering, which is a result of the interaction between sunlight and Earth's atmosphere. When sunlight enters the Earth's atmosphere, it encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more"
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more than the longer wavelengths, like red"
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 2,
+      "verdict": "divergence",
+      "position": 51,
+      "ref_token": " like",
+      "got_token": " such",
+      "margin": 0.130209,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.099835,
+      "swing": 0.230044,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "ncounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light,",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, such as blue and violet, more than the longer wavelengths, such"
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more than the longer wavelengths, like red"
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 1,
+      "verdict": "near-tie",
+      "position": 4,
+      "ref_token": " is",
+      "got_token": " appears",
+      "margin": 0.082392,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.054405,
+      "swing": 0.136797,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "\n\nThe sky",
+      "text": "\n\nThe sky appears blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more than the longer wavelengths, like red"
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": "\n\nThe sky is blue because of a phenomenon called Rayleigh scattering, which is a type of optical scattering that occurs when sunlight enters Earth's atmosphere and encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter wavelengths of light, like blue and violet, more than the longer wavelengths, like red"
+     }
+    ]
+   },
+   {
+    "prompt": "Write a Python function that checks if a number is prime.",
+    "reference": {
+     "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(2) == True\nassert is_prime(3) == True\nassert is_prime(4) == False\n",
+     "finish_reason": "length",
+     "latency_s": 0.5655,
+     "tokens": [
+      {
+       "token": " The",
+       "logprob": -1.0255647897720337,
+       "top": [
+        [
+         " The",
+         -1.0255647897720337
+        ],
+        [
+         "\n",
+         -1.4005895853042603
+        ],
+        [
+         "",
+         -2.359583616256714
+        ],
+        [
+         " It",
+         -2.833542585372925
+        ],
+        [
+         " This",
+         -3.1838135719299316
+        ]
+       ]
+      },
+      {
+       "token": " function",
+       "logprob": -0.018472792580723763,
+       "top": [
+        [
+         " function",
+         -0.018472792580723763
+        ],
+        [
+         " input",
+         -4.936576843261719
+        ],
+        [
+         " number",
+         -6.170722961425781
+        ],
+        [
+         " `",
+         -6.314493179321289
+        ],
+        [
+         " prime",
+         -7.7904815673828125
+        ]
+       ]
+      },
+      {
+       "token": " should",
+       "logprob": -0.04550977796316147,
+       "top": [
+        [
+         " should",
+         -0.04550977796316147
+        ],
+        [
+         " takes",
+         -3.4507317543029785
+        ],
+        [
+         " must",
+         -5.731113910675049
+        ],
+        [
+         " will",
+         -5.934793949127197
+        ],
+        [
+         " accepts",
+         -6.158270359039307
+        ]
+       ]
+      },
+      {
+       "token": " take",
+       "logprob": -0.4876929521560669,
+       "top": [
+        [
+         " take",
+         -0.4876929521560669
+        ],
+        [
+         " return",
+         -1.5415067672729492
+        ],
+        [
+         " accept",
+         -2.778836250305176
+        ],
+        [
+         " have",
+         -3.775876045227051
+        ],
+        [
+         " be",
+         -3.8910417556762695
+        ]
+       ]
+      },
+      {
+       "token": " an",
+       "logprob": -0.8885816931724548,
+       "top": [
+        [
+         " an",
+         -0.8885816931724548
+        ],
+        [
+         " a",
+         -1.0793946981430054
+        ],
+        [
+         " one",
+         -1.8085856437683105
+        ],
+        [
+         " in",
+         -3.359382152557373
+        ],
+        [
+         " two",
+         -3.408801555633545
+        ]
+       ]
+      },
+      {
+       "token": " integer",
+       "logprob": -0.06683448702096939,
+       "top": [
+        [
+         " integer",
+         -0.06683448702096939
+        ],
+        [
+         " input",
+         -3.5273866653442383
+        ],
+        [
+         " argument",
+         -3.968033790588379
+        ],
+        [
+         " optional",
+         -4.691729545593262
+        ],
+        [
+         " arbitrary",
+         -5.73630428314209
+        ]
+       ]
+      },
+      {
+       "token": " as",
+       "logprob": -0.31679683923721313,
+       "top": [
+        [
+         " as",
+         -0.31679683923721313
+        ],
+        [
+         " `",
+         -2.1487956047058105
+        ],
+        [
+         " argument",
+         -2.7962186336517334
+        ],
+        [
+         " and",
+         -3.4407992362976074
+        ],
+        [
+         " parameter",
+         -3.932271718978882
+        ]
+       ]
+      },
+      {
+       "token": " input",
+       "logprob": -0.10550466179847717,
+       "top": [
+        [
+         " input",
+         -0.10550466179847717
+        ],
+        [
+         " an",
+         -2.420243978500366
+        ],
+        [
+         " a",
+         -5.21199369430542
+        ],
+        [
+         " its",
+         -5.786962032318115
+        ],
+        [
+         " the",
+         -6.574876308441162
+        ]
+       ]
+      },
+      {
+       "token": " and",
+       "logprob": -0.07496742159128189,
+       "top": [
+        [
+         " and",
+         -0.07496742159128189
+        ],
+        [
+         ",",
+         -2.6835813522338867
+        ],
+        [
+         ".",
+         -6.435450553894043
+        ],
+        [
+         " (",
+         -7.5760087966918945
+        ],
+        [
+         " `",
+         -7.994620323181152
+        ]
+       ]
+      },
+      {
+       "token": " return",
+       "logprob": -0.013318745419383049,
+       "top": [
+        [
+         " return",
+         -0.013318745419383049
+        ],
+        [
+         " returns",
+         -5.653430461883545
+        ],
+        [
+         " check",
+         -5.966230392456055
+        ],
+        [
+         " determine",
+         -6.879526138305664
+        ],
+        [
+         " output",
+         -6.952233791351318
+        ]
+       ]
+      },
+      {
+       "token": " True",
+       "logprob": -0.7690888047218323,
+       "top": [
+        [
+         " True",
+         -0.7690888047218323
+        ],
+        [
+         " `",
+         -1.2568988800048828
+        ],
+        [
+         " a",
+         -1.4662648439407349
+        ],
+        [
+         " whether",
+         -4.538034439086914
+        ],
+        [
+         " the",
+         -5.719264984130859
+        ]
+       ]
+      },
+      {
+       "token": " if",
+       "logprob": -0.037025708705186844,
+       "top": [
+        [
+         " if",
+         -0.037025708705186844
+        ],
+        [
+         " or",
+         -3.369213342666626
+        ],
+        [
+         " (",
+         -7.033714771270752
+        ],
+        [
+         " for",
+         -7.725353717803955
+        ],
+        [
+         "/",
+         -8.651708602905273
+        ]
+       ]
+      },
+      {
+       "token": " the",
+       "logprob": -0.630398690700531,
+       "top": [
+        [
+         " the",
+         -0.630398690700531
+        ],
+        [
+         " it",
+         -0.7788686752319336
+        ],
+        [
+         " prime",
+         -4.85495662689209
+        ],
+        [
+         " that",
+         -7.485062599182129
+        ],
+        [
+         " Prime",
+         -9.63405704498291
+        ]
+       ]
+      },
+      {
+       "token": " number",
+       "logprob": -0.02099830098450184,
+       "top": [
+        [
+         " number",
+         -0.02099830098450184
+        ],
+        [
+         " integer",
+         -4.344425678253174
+        ],
+        [
+         " input",
+         -5.002689838409424
+        ],
+        [
+         " given",
+         -7.375380039215088
+        ],
+        [
+         " prime",
+         -8.943740844726562
+        ]
+       ]
+      },
+      {
+       "token": " is",
+       "logprob": -0.00039042701246216893,
+       "top": [
+        [
+         " is",
+         -0.00039042701246216893
+        ],
+        [
+         " can",
+         -8.85555362701416
+        ],
+        [
+         " passes",
+         -9.480849266052246
+        ],
+        [
+         " has",
+         -10.017624855041504
+        ],
+        [
+         " meets",
+         -10.918547630310059
+        ]
+       ]
+      },
+      {
+       "token": " prime",
+       "logprob": -0.0033017604146152735,
+       "top": [
+        [
+         " prime",
+         -0.0033017604146152735
+        ],
+        [
+         " a",
+         -6.144811630249023
+        ],
+        [
+         " divisible",
+         -7.85186767578125
+        ],
+        [
+         " Prime",
+         -7.946638107299805
+        ],
+        [
+         " not",
+         -9.28474235534668
+        ]
+       ]
+      },
+      {
+       "token": ",",
+       "logprob": -0.33937349915504456,
+       "top": [
+        [
+         ",",
+         -0.33937349915504456
+        ],
+        [
+         " and",
+         -1.3013447523117065
+        ],
+        [
+         ".",
+         -5.236483573913574
+        ],
+        [
+         " or",
+         -5.362835884094238
+        ],
+        [
+         " (",
+         -5.698592185974121
+        ]
+       ]
+      },
+      {
+       "token": " False",
+       "logprob": -0.7267741560935974,
+       "top": [
+        [
+         " False",
+         -0.7267741560935974
+        ],
+        [
+         " and",
+         -0.8354301452636719
+        ],
+        [
+         " otherwise",
+         -2.8525123596191406
+        ],
+        [
+         " or",
+         -3.88934326171875
+        ],
+        [
+         " else",
+         -6.263387680053711
+        ]
+       ]
+      },
+      {
+       "token": " otherwise",
+       "logprob": -0.06369709968566895,
+       "top": [
+        [
+         " otherwise",
+         -0.06369709968566895
+        ],
+        [
+         " if",
+         -2.7888214588165283
+        ],
+        [
+         " for",
+         -9.599282264709473
+        ],
+        [
+         " Otherwise",
+         -10.069903373718262
+        ],
+        [
+         " in",
+         -10.303330421447754
+        ]
+       ]
+      },
+      {
+       "token": ".",
+       "logprob": -0.003939510323107243,
+       "top": [
+        [
+         ".",
+         -0.003939510323107243
+        ],
+        [
+         ",",
+         -5.8640851974487305
+        ],
+        [
+         ".\"\"\"",
+         -7.797711372375488
+        ],
+        [
+         ":",
+         -8.562090873718262
+        ],
+        [
+         " (",
+         -9.072409629821777
+        ]
+       ]
+      },
+      {
+       "token": "\n",
+       "logprob": -0.990944504737854,
+       "top": [
+        [
+         "\n",
+         -0.990944504737854
+        ],
+        [
+         " The",
+         -1.5430570840835571
+        ],
+        [
+         "",
+         -2.45857310295105
+        ],
+        [
+         " Use",
+         -2.606754779815674
+        ],
+        [
+         " A",
+         -3.17297625541687
+        ]
+       ]
+      },
+      {
+       "token": "\n",
+       "logprob": -0.025279758498072624,
+       "top": [
+        [
+         "\n",
+         -0.025279758498072624
+        ],
+        [
+         "*",
+         -5.531839370727539
+        ],
+        [
+         "-",
+         -5.737225532531738
+        ],
+        [
+         "3",
+         -5.990899085998535
+        ],
+        [
+         "#",
+         -6.316529273986816
+        ]
+       ]
+      },
+      {
+       "token": "Your",
+       "logprob": -1.6003329753875732,
+       "top": [
+        [
+         "Your",
+         -1.6003329753875732
+        ],
+        [
+         "The",
+         -1.6277530193328857
+        ],
+        [
+         "Here",
+         -2.3288180828094482
+        ],
+        [
+         "**",
+         -2.7169063091278076
+        ],
+        [
+         "Use",
+         -2.7394168376922607
+        ]
+       ]
+      },
+      {
+       "token": " code",
+       "logprob": -0.06389887630939484,
+       "top": [
+        [
+         " code",
+         -0.06389887630939484
+        ],
+        [
+         " function",
+         -3.075606107711792
+        ],
+        [
+         " implementation",
+         -5.025773048400879
+        ],
+        [
+         " solution",
+         -5.045210838317871
+        ],
+        [
+         " answer",
+         -7.370879173278809
+        ]
+       ]
+      },
+      {
+       "token": " should",
+       "logprob": -4.1128048906102777e-05,
+       "top": [
+        [
+         " should",
+         -4.1128048906102777e-05
+        ],
+        [
+         " must",
+         -10.696928977966309
+        ],
+        [
+         " will",
+         -12.216080665588379
+        ],
+        [
+         "should",
+         -12.563456535339355
+        ],
+        [
+         " might",
+         -13.223835945129395
+        ]
+       ]
+      },
+      {
+       "token": " pass",
+       "logprob": -0.0010831259423866868,
+       "top": [
+        [
+         " pass",
+         -0.0010831259423866868
+        ],
+        [
+         " be",
+         -7.3277506828308105
+        ],
+        [
+         " first",
+         -9.74427604675293
+        ],
+        [
+         " check",
+         -9.850008010864258
+        ],
+        [
+         " include",
+         -9.97216796875
+        ]
+       ]
+      },
+      {
+       "token": " the",
+       "logprob": -4.136647839914076e-05,
+       "top": [
+        [
+         " the",
+         -4.136647839914076e-05
+        ],
+        [
+         " these",
+         -11.151593208312988
+        ],
+        [
+         " all",
+         -11.683238983154297
+        ],
+        [
+         " both",
+         -12.019458770751953
+        ],
+        [
+         ":",
+         -12.084392547607422
+        ]
+       ]
+      },
+      {
+       "token": " following",
+       "logprob": -6.84284750605002e-05,
+       "top": [
+        [
+         " following",
+         -6.84284750605002e-05
+        ],
+        [
+         " assertion",
+         -10.664995193481445
+        ],
+        [
+         " assertions",
+         -10.890352249145508
+        ],
+        [
+         " test",
+         -11.048398971557617
+        ],
+        [
+         "following",
+         -11.949371337890625
+        ]
+       ]
+      },
+      {
+       "token": " assertions",
+       "logprob": -0.17405544221401215,
+       "top": [
+        [
+         " assertions",
+         -0.17405544221401215
+        ],
+        [
+         " assertion",
+         -2.035747766494751
+        ],
+        [
+         " test",
+         -3.539175271987915
+        ],
+        [
+         " tests",
+         -9.502056121826172
+        ],
+        [
+         " assert",
+         -11.138725280761719
+        ]
+       ]
+      },
+      {
+       "token": ":",
+       "logprob": -6.198902156029362e-06,
+       "top": [
+        [
+         ":",
+         -6.198902156029362e-06
+        ],
+        [
+         ",",
+         -12.403145790100098
+        ],
+        [
+         " with",
+         -14.183995246887207
+        ],
+        [
+         " to",
+         -14.728292465209961
+        ],
+        [
+         " and",
+         -15.183046340942383
+        ]
+       ]
+      },
+      {
+       "token": "\n",
+       "logprob": -1.657022767176386e-05,
+       "top": [
+        [
+         "\n",
+         -1.657022767176386e-05
+        ],
+        [
+         "\n\n",
+         -12.469463348388672
+        ],
+        [
+         "",
+         -12.764827728271484
+        ],
+        [
+         "```",
+         -12.92056655883789
+        ],
+        [
+         "\n   ",
+         -13.417266845703125
+        ]
+       ]
+      },
+      {
+       "token": "```",
+       "logprob": -4.4108408474130556e-05,
+       "top": [
+        [
+         "```",
+         -4.4108408474130556e-05
+        ],
+        [
+         "\n",
+         -10.235634803771973
+        ],
+        [
+         "assert",
+         -12.626712799072266
+        ],
+        [
+         "`",
+         -13.212442398071289
+        ],
+        [
+         " ```",
+         -13.887763977050781
+        ]
+       ]
+      },
+      {
+       "token": "python",
+       "logprob": -0.0003464822075329721,
+       "top": [
+        [
+         "python",
+         -0.0003464822075329721
+        ],
+        [
+         "\n",
+         -8.097439765930176
+        ],
+        [
+         "Python",
+         -10.36218547821045
+        ],
+        [
+         "assert",
+         -13.26832389831543
+        ],
+        [
+         " python",
+         -13.346467971801758
+        ]
+       ]
+      },
+      {
+       "token": "\n",
+       "logprob": -1.9073504518019035e-06,
+       "top": [
+        [
+         "\n",
+         -1.9073504518019035e-06
+        ],
+        [
+         "assert",
+         -14.551030158996582
+        ],
+        [
+         "\r",
+         -14.674047470092773
+        ],
+        [
+         "",
+         -14.90794849395752
+        ],
+        [
+         "\n   ",
+         -15.197701454162598
+        ]
+       ]
+      },
+      {
+       "token": "assert",
+       "logprob": -0.0001150435782619752,
+       "top": [
+        [
+         "assert",
+         -0.0001150435782619752
+        ],
+        [
+         "#",
+         -9.67707633972168
+        ],
+        [
+         "for",
+         -10.753891944885254
+        ],
+        [
+         "test",
+         -12.11502742767334
+        ],
+        [
+         "print",
+         -12.514787673950195
+        ]
+       ]
+      },
+      {
+       "token": " is",
+       "logprob": -0.05584697425365448,
+       "top": [
+        [
+         " is",
+         -0.05584697425365448
+        ],
+        [
+         " check",
+         -3.2647721767425537
+        ],
+        [
+         " not",
+         -4.848237991333008
+        ],
+        [
+         " prime",
+         -6.181552410125732
+        ],
+        [
+         " prim",
+         -6.880054473876953
+        ]
+       ]
+      },
+      {
+       "token": "_",
+       "logprob": -0.012499340809881687,
+       "top": [
+        [
+         "_",
+         -0.012499340809881687
+        ],
+        [
+         "prime",
+         -4.448746204376221
+        ],
+        [
+         "Prime",
+         -7.436290264129639
+        ],
+        [
+         " prime",
+         -11.191071510314941
+        ],
+        [
+         "p",
+         -11.634927749633789
+        ]
+       ]
+      },
+      {
+       "token": "prime",
+       "logprob": -0.00456209946423769,
+       "top": [
+        [
+         "prime",
+         -0.00456209946423769
+        ],
+        [
+         "pr",
+         -7.15297794342041
+        ],
+        [
+         "prim",
+         -7.5182366371154785
+        ],
+        [
+         "div",
+         -7.809704303741455
+        ],
+        [
+         "not",
+         -8.27828598022461
+        ]
+       ]
+      },
+      {
+       "token": "(",
+       "logprob": -0.05279703810811043,
+       "top": [
+        [
+         "(",
+         -0.05279703810811043
+        ],
+        [
+         "_",
+         -3.1116902828216553
+        ],
+        [
+         "(-",
+         -5.025882720947266
+        ],
+        [
+         "('",
+         -9.28098201751709
+        ],
+        [
+         "([",
+         -9.69078540802002
+        ]
+       ]
+      },
+      {
+       "token": "2",
+       "logprob": -1.1205830574035645,
+       "top": [
+        [
+         "2",
+         -1.1205830574035645
+        ],
+        [
+         "1",
+         -1.141430377960205
+        ],
+        [
+         "3",
+         -2.3704514503479004
+        ],
+        [
+         "5",
+         -2.5584206581115723
+        ],
+        [
+         "4",
+         -2.737356662750244
+        ]
+       ]
+      },
+      {
+       "token": ")",
+       "logprob": -0.46714335680007935,
+       "top": [
+        [
+         ")",
+         -0.46714335680007935
+        ],
+        [
+         "5",
+         -1.9300377368927002
+        ],
+        [
+         "3",
+         -2.6665661334991455
+        ],
+        [
+         "0",
+         -2.8067429065704346
+        ],
+        [
+         "1",
+         -3.060887575149536
+        ]
+       ]
+      },
+      {
+       "token": " ==",
+       "logprob": -0.19371546804904938,
+       "top": [
+        [
+         " ==",
+         -0.19371546804904938
+        ],
+        [
+         " is",
+         -1.7809957265853882
+        ],
+        [
+         "\n",
+         -5.387740612030029
+        ],
+        [
+         " ",
+         -6.042169094085693
+        ],
+        [
+         " #",
+         -8.215851783752441
+        ]
+       ]
+      },
+      {
+       "token": " True",
+       "logprob": -0.15140800178050995,
+       "top": [
+        [
+         " True",
+         -0.15140800178050995
+        ],
+        [
+         " False",
+         -1.9684207439422607
+        ],
+        [
+         " ",
+         -8.636845588684082
+        ],
+        [
+         "True",
+         -8.681256294250488
+        ],
+        [
+         " bool",
+         -8.926873207092285
+        ]
+       ]
+      },
+      {
+       "token": "\n",
+       "logprob": -0.00628055352717638,
+       "top": [
+        [
+         "\n",
+         -0.00628055352717638
+        ],
+        [
+         " ",
+         -5.1208319664001465
+        ],
+        [
+         " #",
+         -8.817803382873535
+        ],
+        [
+         ",",
+         -9.465508460998535
+        ],
+        [
+         "  ",
+         -10.74366283416748
+        ]
+       ]
+      },
+      {
+       "token": "assert",
+       "logprob": -0.0006064823246560991,
+       "top": [
+        [
+         "assert",
+         -0.0006064823246560991
+        ],
+        [
+         "```",
+         -7.512326240539551
+        ],
+        [
+         "\n",
+         -11.266416549682617
+        ],
+        [
+         "try",
+         -11.538825035095215
+        ],
+        [
+         "assertTrue",
+         -12.09653377532959
+        ]
+       ]
+      },
+      {
+       "token": " is",
+       "logprob": -0.030250275507569313,
+       "top": [
+        [
+         " is",
+         -0.030250275507569313
+        ],
+        [
+         " not",
+         -3.5365235805511475
+        ],
+        [
+         " isn",
+         -7.43556547164917
+        ],
+        [
+         " len",
+         -10.636505126953125
+        ],
+        [
+         " isinstance",
+         -10.78533935546875
+        ]
+       ]
+      },
+      {
+       "token": "_",
+       "logprob": -1.4305124977909145e-06,
+       "top": [
+        [
+         "_",
+         -1.4305124977909145e-06
+        ],
+        [
+         "Prime",
+         -14.305678367614746
+        ],
+        [
+         "\\_",
+         -14.634652137756348
+        ],
+        [
+         "prime",
+         -15.1565580368042
+        ],
+        [
+         " prime",
+         -16.07331085205078
+        ]
+       ]
+      },
+      {
+       "token": "prime",
+       "logprob": -2.372293056396302e-05,
+       "top": [
+        [
+         "prime",
+         -2.372293056396302e-05
+        ],
+        [
+         "prim",
+         -11.5960054397583
+        ],
+        [
+         " Prime",
+         -12.238910675048828
+        ],
+        [
+         "Prime",
+         -13.064499855041504
+        ],
+        [
+         " prime",
+         -13.501758575439453
+        ]
+       ]
+      },
+      {
+       "token": "(",
+       "logprob": -0.0036772664170712233,
+       "top": [
+        [
+         "(",
+         -0.0036772664170712233
+        ],
+        [
+         "(-",
+         -5.755878448486328
+        ],
+        [
+         "('",
+         -8.620990753173828
+        ],
+        [
+         "_",
+         -8.715112686157227
+        ],
+        [
+         "(\"",
+         -8.988321304321289
+        ]
+       ]
+      },
+      {
+       "token": "3",
+       "logprob": -0.3723883032798767,
+       "top": [
+        [
+         "3",
+         -0.3723883032798767
+        ],
+        [
+         "1",
+         -1.9717631340026855
+        ],
+        [
+         "4",
+         -2.602689266204834
+        ],
+        [
+         "5",
+         -3.070237636566162
+        ],
+        [
+         "7",
+         -3.5770773887634277
+        ]
+       ]
+      },
+      {
+       "token": ")",
+       "logprob": -0.011125653982162476,
+       "top": [
+        [
+         ")",
+         -0.011125653982162476
+        ],
+        [
+         "0",
+         -5.887786865234375
+        ],
+        [
+         "1",
+         -6.40565299987793
+        ],
+        [
+         "5",
+         -6.717931747436523
+        ],
+        [
+         "6",
+         -6.750757217407227
+        ]
+       ]
+      },
+      {
+       "token": " ==",
+       "logprob": -0.0003022412129212171,
+       "top": [
+        [
+         " ==",
+         -0.0003022412129212171
+        ],
+        [
+         " is",
+         -8.648266792297363
+        ],
+        [
+         " ",
+         -9.6981782913208
+        ],
+        [
+         "\n",
+         -10.849024772644043
+        ],
+        [
+         " !=",
+         -11.12052059173584
+        ]
+       ]
+      },
+      {
+       "token": " True",
+       "logprob": -0.34754496812820435,
+       "top": [
+        [
+         " True",
+         -0.34754496812820435
+        ],
+        [
+         " False",
+         -1.2265714406967163
+        ],
+        [
+         "True",
+         -9.572848320007324
+        ],
+        [
+         " None",
+         -9.58190631866455
+        ],
+        [
+         "False",
+         -10.361634254455566
+        ]
+       ]
+      },
+      {
+       "token": "\n",
+       "logprob": -0.00019057421013712883,
+       "top": [
+        [
+         "\n",
+         -0.00019057421013712883
+        ],
+        [
+         " ",
+         -8.746232986450195
+        ],
+        [
+         " #",
+         -11.76535701751709
+        ],
+        [
+         ",",
+         -12.207162857055664
+        ],
+        [
+         "",
+         -12.296601295471191
+        ]
+       ]
+      },
+      {
+       "token": "assert",
+       "logprob": -0.09327158331871033,
+       "top": [
+        [
+         "assert",
+         -0.09327158331871033
+        ],
+        [
+         "```",
+         -2.432997226715088
+        ],
+        [
+         "\n",
+         -8.169182777404785
+        ],
+        [
+         "try",
+         -8.290495872497559
+        ],
+        [
+         "print",
+         -9.044707298278809
+        ]
+       ]
+      },
+      {
+       "token": " is",
+       "logprob": -0.0391828678548336,
+       "top": [
+        [
+         " is",
+         -0.0391828678548336
+        ],
+        [
+         " not",
+         -3.2873384952545166
+        ],
+        [
+         " isn",
+         -6.966032028198242
+        ],
+        [
+         " !",
+         -10.606317520141602
+        ],
+        [
+         " len",
+         -10.839113235473633
+        ]
+       ]
+      },
+      {
+       "token": "_",
+       "logprob": -1.7881409348774469e-06,
+       "top": [
+        [
+         "_",
+         -1.7881409348774469e-06
+        ],
+        [
+         "\\_",
+         -13.967489242553711
+        ],
+        [
+         "Prime",
+         -14.201665878295898
+        ],
+        [
+         "prime",
+         -15.543591499328613
+        ],
+        [
+         " prime",
+         -16.306344985961914
+        ]
+       ]
+      },
+      {
+       "token": "prime",
+       "logprob": -2.6464813345228322e-05,
+       "top": [
+        [
+         "prime",
+         -2.6464813345228322e-05
+        ],
+        [
+         " Prime",
+         -11.735725402832031
+        ],
+        [
+         "prim",
+         -11.75678825378418
+        ],
+        [
+         "Prime",
+         -12.97761058807373
+        ],
+        [
+         " prime",
+         -13.367380142211914
+        ]
+       ]
+      },
+      {
+       "token": "(",
+       "logprob": -0.008501504547894001,
+       "top": [
+        [
+         "(",
+         -0.008501504547894001
+        ],
+        [
+         "(-",
+         -4.851017475128174
+        ],
+        [
+         "('",
+         -8.157065391540527
+        ],
+        [
+         "(\"",
+         -8.463399887084961
+        ],
+        [
+         "_",
+         -9.364486694335938
+        ]
+       ]
+      },
+      {
+       "token": "4",
+       "logprob": -0.32146817445755005,
+       "top": [
+        [
+         "4",
+         -0.32146817445755005
+        ],
+        [
+         "1",
+         -1.605405569076538
+        ],
+        [
+         "5",
+         -3.2203309535980225
+        ],
+        [
+         "2",
+         -4.420587062835693
+        ],
+        [
+         "7",
+         -4.906457901000977
+        ]
+       ]
+      },
+      {
+       "token": ")",
+       "logprob": -0.004628924652934074,
+       "top": [
+        [
+         ")",
+         -0.004628924652934074
+        ],
+        [
+         "5",
+         -6.2388916015625
+        ],
+        [
+         "2",
+         -6.766961574554443
+        ],
+        [
+         "8",
+         -7.867476940155029
+        ],
+        [
+         "0",
+         -8.097837448120117
+        ]
+       ]
+      },
+      {
+       "token": " ==",
+       "logprob": -0.0001307811471633613,
+       "top": [
+        [
+         " ==",
+         -0.0001307811471633613
+        ],
+        [
+         " !=",
+         -10.319586753845215
+        ],
+        [
+         " is",
+         -10.407402992248535
+        ],
+        [
+         " <",
+         -10.978060722351074
+        ],
+        [
+         " <=",
+         -11.140093803405762
+        ]
+       ]
+      },
+      {
+       "token": " False",
+       "logprob": -0.07171761244535446,
+       "top": [
+        [
+         " False",
+         -0.07171761244535446
+        ],
+        [
+         " True",
+         -2.680049419403076
+        ],
+        [
+         " None",
+         -8.341225624084473
+        ],
+        [
+         " false",
+         -8.383341789245605
+        ],
+        [
+         "False",
+         -9.259259223937988
+        ]
+       ]
+      },
+      {
+       "token": "\n",
+       "logprob": -0.00027392085758037865,
+       "top": [
+        [
+         "\n",
+         -0.00027392085758037865
+        ],
+        [
+         " ",
+         -8.695870399475098
+        ],
+        [
+         " #",
+         -10.145421028137207
+        ],
+        [
+         ",",
+         -11.111393928527832
+        ],
+        [
+         "",
+         -11.142335891723633
+        ]
+       ]
+      }
+     ]
+    },
+    "runs": [
+     {
+      "condition": "solo-warm",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(2) == True\nassert is_prime(3) == True\nassert is_prime(4) == False\n"
+     },
+     {
+      "condition": "solo-warm",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(2) == True\nassert is_prime(3) == True\nassert is_prime(4) == False\n"
+     },
+     {
+      "condition": "solo-warm",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(2) == True\nassert is_prime(3) == True\nassert is_prime(4) == False\n"
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(2) == True\nassert is_prime(3) == True\nassert is_prime(4) == False\n"
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(2) == True\nassert is_prime(3) == True\nassert is_prime(4) == False\n"
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(2) == True\nassert is_prime(3) == True\nassert is_prime(4) == False\n"
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(2) == True\nassert is_prime(3) == True\nassert is_prime(4) == False\n"
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 1,
+      "verdict": "near-tie",
+      "position": 22,
+      "ref_token": "Your",
+      "got_token": "The",
+      "margin": 0.02742,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.139954,
+      "swing": 0.167374,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\n",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nThe function should handle the following cases:\n\n- If the input is a negative number, the function should return False.\n- If the input is a non-integer, the function should return False."
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(2) == True\nassert is_prime(3) == True\nassert is_prime(4) == False\n"
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 0,
+      "verdict": "near-tie",
+      "position": 22,
+      "ref_token": "Your",
+      "got_token": "The",
+      "margin": 0.02742,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.128365,
+      "swing": 0.155785,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\n",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nThe function should handle the following cases:\n\n- If the input is a negative number, the function should return False.\n- If the input is a non-integer, the function should return False."
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 1,
+      "verdict": "near-tie",
+      "position": 39,
+      "ref_token": "2",
+      "got_token": "1",
+      "margin": 0.020847,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.201591,
+      "swing": 0.222438,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "rue if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(1) == False\nassert is_prime(2) == True\nassert is_prime(3) == True\n"
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 2,
+      "verdict": "near-tie",
+      "position": 39,
+      "ref_token": "2",
+      "got_token": "1",
+      "margin": 0.020847,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.173794,
+      "swing": 0.194641,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "rue if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(1) == False\nassert is_prime(2) == True\nassert is_prime(3) == True\n"
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 0,
+      "verdict": "near-tie",
+      "position": 39,
+      "ref_token": "2",
+      "got_token": "1",
+      "margin": 0.020847,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.084885,
+      "swing": 0.105732,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "rue if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(1) == False\nassert is_prime(2) == True\nassert is_prime(3) == True\n"
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 1,
+      "verdict": "near-tie",
+      "position": 22,
+      "ref_token": "Your",
+      "got_token": "The",
+      "margin": 0.02742,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.232954,
+      "swing": 0.260374,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\n",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nThe function should handle the following cases:\n\n* If the input is a negative number, the function should return False.\n* If the input is a non-integer, the function should return False."
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 2,
+      "verdict": "near-tie",
+      "position": 39,
+      "ref_token": "2",
+      "got_token": "1",
+      "margin": 0.020847,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.013968,
+      "swing": 0.034815,
+      "ref_len": 64,
+      "got_len": 64,
+      "prefix_text": "rue if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(",
+      "text": " The function should take an integer as input and return True if the number is prime, False otherwise.\n\nYour code should pass the following assertions:\n```python\nassert is_prime(1) == False\nassert is_prime(2) == True\nassert is_prime(3) == True\n"
+     }
+    ]
+   },
+   {
+    "prompt": "List five uses of copper.",
+    "reference": {
+     "text": "",
+     "finish_reason": "stop",
+     "latency_s": 0.0153,
+     "tokens": [
+      {
+       "token": "",
+       "logprob": -0.24560438096523285,
+       "top": [
+        [
+         "",
+         -0.24560438096523285
+        ],
+        [
+         "\n",
+         -2.400822401046753
+        ],
+        [
+         "\n\n",
+         -4.10439395904541
+        ],
+        [
+         " Each",
+         -5.000217437744141
+        ],
+        [
+         " \n",
+         -5.100193977355957
+        ]
+       ]
+      }
+     ]
+    },
+    "runs": [
+     {
+      "condition": "solo-warm",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "solo-warm",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "solo-warm",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 1,
+      "got_len": 1,
+      "prefix_text": "",
+      "text": ""
+     }
+    ]
+   },
+   {
+    "prompt": "Summarise the plot of Romeo and Juliet in two sentences.",
+    "reference": {
+     "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome.",
+     "finish_reason": "stop",
+     "latency_s": 0.3404,
+     "tokens": [
+      {
+       "token": "\n",
+       "logprob": -0.41624394059181213,
+       "top": [
+        [
+         "\n",
+         -0.41624394059181213
+        ],
+        [
+         "",
+         -1.4243139028549194
+        ],
+        [
+         " \n",
+         -3.4774107933044434
+        ],
+        [
+         " ",
+         -4.919070720672607
+        ],
+        [
+         " The",
+         -4.965362071990967
+        ]
+       ]
+      },
+      {
+       "token": "\n",
+       "logprob": -0.358919620513916,
+       "top": [
+        [
+         "\n",
+         -0.358919620513916
+        ],
+        [
+         "The",
+         -2.584921360015869
+        ],
+        [
+         "Rome",
+         -3.0518975257873535
+        ],
+        [
+         "In",
+         -4.46983003616333
+        ],
+        [
+         "####",
+         -4.569671154022217
+        ]
+       ]
+      },
+      {
+       "token": "Rome",
+       "logprob": -0.927665114402771,
+       "top": [
+        [
+         "Rome",
+         -0.927665114402771
+        ],
+        [
+         "The",
+         -1.5159448385238647
+        ],
+        [
+         "In",
+         -2.3786025047302246
+        ],
+        [
+         "Summary",
+         -4.353102207183838
+        ],
+        [
+         "A",
+         -4.7279229164123535
+        ]
+       ]
+      },
+      {
+       "token": "o",
+       "logprob": -5.555307143367827e-05,
+       "top": [
+        [
+         "o",
+         -5.555307143367827e-05
+        ],
+        [
+         "os",
+         -10.248939514160156
+        ],
+        [
+         "us",
+         -12.051465034484863
+        ],
+        [
+         "ot",
+         -12.602879524230957
+        ],
+        [
+         "op",
+         -12.744470596313477
+        ]
+       ]
+      },
+      {
+       "token": " and",
+       "logprob": -0.06730112433433533,
+       "top": [
+        [
+         " and",
+         -0.06730112433433533
+        ],
+        [
+         ",",
+         -4.328176021575928
+        ],
+        [
+         " is",
+         -4.959121227264404
+        ],
+        [
+         "'s",
+         -5.143542766571045
+        ],
+        [
+         " falls",
+         -5.19457483291626
+        ]
+       ]
+      },
+      {
+       "token": " Juliet",
+       "logprob": -0.002323881722986698,
+       "top": [
+        [
+         " Juliet",
+         -0.002323881722986698
+        ],
+        [
+         " Merc",
+         -7.287091255187988
+        ],
+        [
+         " jul",
+         -7.554804801940918
+        ],
+        [
+         " his",
+         -8.211464881896973
+        ],
+        [
+         " Ben",
+         -8.744139671325684
+        ]
+       ]
+      },
+      {
+       "token": "'s",
+       "logprob": -1.4319627285003662,
+       "top": [
+        [
+         "'s",
+         -1.4319627285003662
+        ],
+        [
+         " is",
+         -1.6019303798675537
+        ],
+        [
+         ",",
+         -1.921625018119812
+        ],
+        [
+         " are",
+         -1.9406489133834839
+        ],
+        [
+         "\u2019",
+         -4.033940315246582
+        ]
+       ]
+      },
+      {
+       "token": " tragic",
+       "logprob": -1.3401280641555786,
+       "top": [
+        [
+         " tragic",
+         -1.3401280641555786
+        ],
+        [
+         " love",
+         -1.8299542665481567
+        ],
+        [
+         " fe",
+         -1.9686452150344849
+        ],
+        [
+         " story",
+         -3.2061519622802734
+        ],
+        [
+         " passionate",
+         -4.011932373046875
+        ]
+       ]
+      },
+      {
+       "token": " love",
+       "logprob": -0.11700736731290817,
+       "top": [
+        [
+         " love",
+         -0.11700736731290817
+        ],
+        [
+         " tale",
+         -3.588923454284668
+        ],
+        [
+         " story",
+         -3.75028920173645
+        ],
+        [
+         " romance",
+         -4.492646217346191
+        ],
+        [
+         " fate",
+         -4.5116682052612305
+        ]
+       ]
+      },
+      {
+       "token": " story",
+       "logprob": -0.09849979728460312,
+       "top": [
+        [
+         " story",
+         -0.09849979728460312
+        ],
+        [
+         " is",
+         -3.4960694313049316
+        ],
+        [
+         " for",
+         -4.514942646026611
+        ],
+        [
+         " blossoms",
+         -4.544771671295166
+        ],
+        [
+         " affair",
+         -5.4523186683654785
+        ]
+       ]
+      },
+      {
+       "token": " is",
+       "logprob": -1.1206167936325073,
+       "top": [
+        [
+         " is",
+         -1.1206167936325073
+        ],
+        [
+         " begins",
+         -1.4258078336715698
+        ],
+        [
+         " unfolds",
+         -1.7919996976852417
+        ],
+        [
+         ",",
+         -2.8779351711273193
+        ],
+        [
+         " revolves",
+         -3.013252019882202
+        ]
+       ]
+      },
+      {
+       "token": " a",
+       "logprob": -1.237571120262146,
+       "top": [
+        [
+         " a",
+         -1.237571120262146
+        ],
+        [
+         " set",
+         -2.000304698944092
+        ],
+        [
+         " the",
+         -2.9429125785827637
+        ],
+        [
+         " one",
+         -3.2110533714294434
+        ],
+        [
+         " about",
+         -3.56068754196167
+        ]
+       ]
+      },
+      {
+       "token": " classic",
+       "logprob": -1.7357853651046753,
+       "top": [
+        [
+         " classic",
+         -1.7357853651046753
+        ],
+        [
+         " tale",
+         -2.53395938873291
+        ],
+        [
+         " dramatic",
+         -2.5915610790252686
+        ],
+        [
+         " heart",
+         -2.716860771179199
+        ],
+        [
+         " tragic",
+         -3.1355886459350586
+        ]
+       ]
+      },
+      {
+       "token": " tale",
+       "logprob": -0.6631313562393188,
+       "top": [
+        [
+         " tale",
+         -0.6631313562393188
+        ],
+        [
+         " example",
+         -1.8993717432022095
+        ],
+        [
+         ",",
+         -3.039742946624756
+        ],
+        [
+         " Romeo",
+         -3.0648553371429443
+        ],
+        [
+         " and",
+         -3.283677577972412
+        ]
+       ]
+      },
+      {
+       "token": " of",
+       "logprob": -0.06248120963573456,
+       "top": [
+        [
+         " of",
+         -0.06248120963573456
+        ],
+        [
+         ",",
+         -4.409769535064697
+        ],
+        [
+         " that",
+         -4.5616936683654785
+        ],
+        [
+         " about",
+         -4.826042652130127
+        ],
+        [
+         " set",
+         -5.013784885406494
+        ]
+       ]
+      },
+      {
+       "token": " forbidden",
+       "logprob": -0.6545897126197815,
+       "top": [
+        [
+         " forbidden",
+         -0.6545897126197815
+        ],
+        [
+         " two",
+         -3.0628464221954346
+        ],
+        [
+         " passion",
+         -3.4354124069213867
+        ],
+        [
+         " young",
+         -3.48538875579834
+        ],
+        [
+         " fate",
+         -3.585330009460449
+        ]
+       ]
+      },
+      {
+       "token": " love",
+       "logprob": -0.5756139159202576,
+       "top": [
+        [
+         " love",
+         -0.5756139159202576
+        ],
+        [
+         " romance",
+         -1.405558466911316
+        ],
+        [
+         " passion",
+         -1.9840688705444336
+        ],
+        [
+         " union",
+         -5.038031578063965
+        ],
+        [
+         " courtship",
+         -5.472323417663574
+        ]
+       ]
+      },
+      {
+       "token": ",",
+       "logprob": -0.843005895614624,
+       "top": [
+        [
+         ",",
+         -0.843005895614624
+        ],
+        [
+         " and",
+         -0.9436299204826355
+        ],
+        [
+         " in",
+         -3.05753493309021
+        ],
+        [
+         " amidst",
+         -3.390205144882202
+        ],
+        [
+         " that",
+         -3.6221425533294678
+        ]
+       ]
+      },
+      {
+       "token": " driven",
+       "logprob": -2.2093582153320312,
+       "top": [
+        [
+         " driven",
+         -2.2093582153320312
+        ],
+        [
+         " fueled",
+         -2.634920120239258
+        ],
+        [
+         " where",
+         -2.705057382583618
+        ],
+        [
+         " set",
+         -2.821023941040039
+        ],
+        [
+         " revenge",
+         -3.3916282653808594
+        ]
+       ]
+      },
+      {
+       "token": " by",
+       "logprob": -0.004494799766689539,
+       "top": [
+        [
+         " by",
+         -0.004494799766689539
+        ],
+        [
+         " primarily",
+         -6.635575294494629
+        ],
+        [
+         " solely",
+         -7.315903663635254
+        ],
+        [
+         " to",
+         -7.611250877380371
+        ],
+        [
+         " not",
+         -8.145768165588379
+        ]
+       ]
+      },
+      {
+       "token": " the",
+       "logprob": -1.0606027841567993,
+       "top": [
+        [
+         " the",
+         -1.0606027841567993
+        ],
+        [
+         " a",
+         -2.2876572608947754
+        ],
+        [
+         " fate",
+         -2.698368787765503
+        ],
+        [
+         " their",
+         -2.7696690559387207
+        ],
+        [
+         " family",
+         -3.470512866973877
+        ]
+       ]
+      },
+      {
+       "token": " fe",
+       "logprob": -2.3118531703948975,
+       "top": [
+        [
+         " fe",
+         -2.3118531703948975
+        ],
+        [
+         " tragic",
+         -2.4704015254974365
+        ],
+        [
+         " desire",
+         -3.1655232906341553
+        ],
+        [
+         " societal",
+         -3.3853986263275146
+        ],
+        [
+         " Mont",
+         -3.8558387756347656
+        ]
+       ]
+      },
+      {
+       "token": "ud",
+       "logprob": -0.17829714715480804,
+       "top": [
+        [
+         "ud",
+         -0.17829714715480804
+        ],
+        [
+         "uding",
+         -1.9071446657180786
+        ],
+        [
+         "igned",
+         -4.967807769775391
+        ],
+        [
+         "uds",
+         -6.077756881713867
+        ],
+        [
+         "vered",
+         -6.123991012573242
+        ]
+       ]
+      },
+      {
+       "token": " between",
+       "logprob": -0.011236741207540035,
+       "top": [
+        [
+         " between",
+         -0.011236741207540035
+        ],
+        [
+         " with",
+         -5.146347522735596
+        ],
+        [
+         " and",
+         -5.591158390045166
+        ],
+        [
+         " in",
+         -7.952789783477783
+        ],
+        [
+         " that",
+         -8.282796859741211
+        ]
+       ]
+      },
+      {
+       "token": " their",
+       "logprob": -0.6830071806907654,
+       "top": [
+        [
+         " their",
+         -0.6830071806907654
+        ],
+        [
+         " the",
+         -1.057856559753418
+        ],
+        [
+         " two",
+         -2.572993278503418
+        ],
+        [
+         " families",
+         -3.392338752746582
+        ],
+        [
+         " fe",
+         -4.839653968811035
+        ]
+       ]
+      },
+      {
+       "token": " families",
+       "logprob": -0.0951857790350914,
+       "top": [
+        [
+         " families",
+         -0.0951857790350914
+        ],
+        [
+         " fe",
+         -3.020595073699951
+        ],
+        [
+         " two",
+         -4.247777462005615
+        ],
+        [
+         " respective",
+         -4.630073070526123
+        ],
+        [
+         " family",
+         -5.783322811126709
+        ]
+       ]
+      },
+      {
+       "token": ",",
+       "logprob": -0.8315750956535339,
+       "top": [
+        [
+         ",",
+         -0.8315750956535339
+        ],
+        [
+         ".",
+         -1.1873223781585693
+        ],
+        [
+         " and",
+         -1.5299184322357178
+        ],
+        [
+         " in",
+         -4.427337169647217
+        ],
+        [
+         "'",
+         -5.136289119720459
+        ]
+       ]
+      },
+      {
+       "token": " ultimately",
+       "logprob": -1.5976248979568481,
+       "top": [
+        [
+         " ultimately",
+         -1.5976248979568481
+        ],
+        [
+         " the",
+         -1.6777163743972778
+        ],
+        [
+         " and",
+         -2.0715439319610596
+        ],
+        [
+         " fueled",
+         -2.3046276569366455
+        ],
+        [
+         " which",
+         -2.83874249458313
+        ]
+       ]
+      },
+      {
+       "token": " leading",
+       "logprob": -0.4961506426334381,
+       "top": [
+        [
+         " leading",
+         -0.4961506426334381
+        ],
+        [
+         " resulting",
+         -1.571149468421936
+        ],
+        [
+         " ending",
+         -2.959441661834717
+        ],
+        [
+         " led",
+         -3.4138543605804443
+        ],
+        [
+         " culminating",
+         -4.200826168060303
+        ]
+       ]
+      },
+      {
+       "token": " to",
+       "logprob": -0.007726400624960661,
+       "top": [
+        [
+         " to",
+         -0.007726400624960661
+        ],
+        [
+         " them",
+         -5.085137844085693
+        ],
+        [
+         " their",
+         -7.494874954223633
+        ],
+        [
+         " the",
+         -8.015140533447266
+        ],
+        [
+         " both",
+         -9.105731964111328
+        ]
+       ]
+      },
+      {
+       "token": " a",
+       "logprob": -1.033277988433838,
+       "top": [
+        [
+         " a",
+         -1.033277988433838
+        ],
+        [
+         " their",
+         -1.5425457954406738
+        ],
+        [
+         " the",
+         -1.5862239599227905
+        ],
+        [
+         " tragic",
+         -2.0669636726379395
+        ],
+        [
+         " Romeo",
+         -4.063496112823486
+        ]
+       ]
+      },
+      {
+       "token": " devastating",
+       "logprob": -1.0950762033462524,
+       "top": [
+        [
+         " devastating",
+         -1.0950762033462524
+        ],
+        [
+         " tragic",
+         -1.2880046367645264
+        ],
+        [
+         " dramatic",
+         -2.7281482219696045
+        ],
+        [
+         " violent",
+         -3.0728859901428223
+        ],
+        [
+         " young",
+         -3.5936858654022217
+        ]
+       ]
+      },
+      {
+       "token": " and",
+       "logprob": -2.054142713546753,
+       "top": [
+        [
+         " and",
+         -2.054142713546753
+        ],
+        [
+         " conclusion",
+         -2.133558988571167
+        ],
+        [
+         " outcome",
+         -2.2741172313690186
+        ],
+        [
+         " confrontation",
+         -2.4857945442199707
+        ],
+        [
+         " fate",
+         -2.5301613807678223
+        ]
+       ]
+      },
+      {
+       "token": " tragic",
+       "logprob": -1.504242181777954,
+       "top": [
+        [
+         " tragic",
+         -1.504242181777954
+        ],
+        [
+         " violent",
+         -2.208244562149048
+        ],
+        [
+         " bloody",
+         -2.9491045475006104
+        ],
+        [
+         " sens",
+         -3.236891031265259
+        ],
+        [
+         " heart",
+         -3.239105463027954
+        ]
+       ]
+      },
+      {
+       "token": " outcome",
+       "logprob": -1.1479706764221191,
+       "top": [
+        [
+         " outcome",
+         -1.1479706764221191
+        ],
+        [
+         " conclusion",
+         -1.3484712839126587
+        ],
+        [
+         " end",
+         -1.9579511880874634
+        ],
+        [
+         " ending",
+         -2.650200366973877
+        ],
+        [
+         " fate",
+         -3.4654698371887207
+        ]
+       ]
+      },
+      {
+       "token": ".",
+       "logprob": -0.08059287816286087,
+       "top": [
+        [
+         ".",
+         -0.08059287816286087
+        ],
+        [
+         " for",
+         -3.6566312313079834
+        ],
+        [
+         ",",
+         -3.8214356899261475
+        ],
+        [
+         " that",
+         -4.861122131347656
+        ],
+        [
+         ".\"",
+         -5.436801910400391
+        ]
+       ]
+      },
+      {
+       "token": "",
+       "logprob": -0.3590233325958252,
+       "top": [
+        [
+         "",
+         -0.3590233325958252
+        ],
+        [
+         "\n",
+         -1.9618504047393799
+        ],
+        [
+         " The",
+         -2.6631500720977783
+        ],
+        [
+         " \n",
+         -4.281558036804199
+        ],
+        [
+         " Their",
+         -4.331206321716309
+        ]
+       ]
+      }
+     ]
+    },
+    "runs": [
+     {
+      "condition": "solo-warm",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 37,
+      "got_len": 37,
+      "prefix_text": "",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome."
+     },
+     {
+      "condition": "solo-warm",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 37,
+      "got_len": 37,
+      "prefix_text": "",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome."
+     },
+     {
+      "condition": "solo-warm",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 37,
+      "got_len": 37,
+      "prefix_text": "",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome."
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 0,
+      "verdict": "near-tie",
+      "position": 27,
+      "ref_token": " ultimately",
+      "got_token": " the",
+      "margin": 0.080091,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.120945,
+      "swing": 0.201036,
+      "ref_len": 37,
+      "got_len": 56,
+      "prefix_text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families,",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, the Montagues and Capulets. The lovers are killed by their families' enemies, the Capulets, due to their relationship."
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 37,
+      "got_len": 37,
+      "prefix_text": "",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome."
+     },
+     {
+      "condition": "solo-cold",
+      "repeat": 2,
+      "verdict": "near-tie",
+      "position": 27,
+      "ref_token": " ultimately",
+      "got_token": " the",
+      "margin": 0.080091,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.230803,
+      "swing": 0.310894,
+      "ref_len": 37,
+      "got_len": 61,
+      "prefix_text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families,",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, the Montagues and Capulets. The lovers are killed by their families' enemies, the Capulets, due to their bloodline and family feud."
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 0,
+      "verdict": "near-tie",
+      "position": 27,
+      "ref_token": " ultimately",
+      "got_token": " the",
+      "margin": 0.080091,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.238794,
+      "swing": 0.318885,
+      "ref_len": 37,
+      "got_len": 61,
+      "prefix_text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families,",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, the Montagues and Capulets. The lovers are killed by their families' enemies, the Capulets, due to their bloodline and family feud."
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 37,
+      "got_len": 37,
+      "prefix_text": "",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome."
+     },
+     {
+      "condition": "concurrent-2",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 37,
+      "got_len": 37,
+      "prefix_text": "",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome."
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 0,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 37,
+      "got_len": 37,
+      "prefix_text": "",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome."
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 1,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 37,
+      "got_len": 37,
+      "prefix_text": "",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome."
+     },
+     {
+      "condition": "concurrent-4",
+      "repeat": 2,
+      "verdict": "identical",
+      "position": null,
+      "ref_token": null,
+      "got_token": null,
+      "margin": null,
+      "got_rank_in_ref": null,
+      "got_margin": null,
+      "swing": null,
+      "ref_len": 37,
+      "got_len": 37,
+      "prefix_text": "",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, ultimately leading to a devastating and tragic outcome."
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 0,
+      "verdict": "near-tie",
+      "position": 27,
+      "ref_token": " ultimately",
+      "got_token": " the",
+      "margin": 0.080091,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.051581,
+      "swing": 0.131672,
+      "ref_len": 37,
+      "got_len": 61,
+      "prefix_text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families,",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, the Montagues and Capulets. The lovers are killed by their families' enemies, the Capulets, due to their bloodline and family feud."
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 1,
+      "verdict": "near-tie",
+      "position": 27,
+      "ref_token": " ultimately",
+      "got_token": " the",
+      "margin": 0.080091,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.033232,
+      "swing": 0.113323,
+      "ref_len": 37,
+      "got_len": 64,
+      "prefix_text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families,",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the feud between their families, the Montagues and Capulets. The lovers are killed by their families' enemies, the Capulets, due to their bloodline and the feud between the two families."
+     },
+     {
+      "condition": "concurrent-8-shuffled",
+      "repeat": 2,
+      "verdict": "divergence",
+      "position": 21,
+      "ref_token": " fe",
+      "got_token": " tragic",
+      "margin": 0.158548,
+      "got_rank_in_ref": 1,
+      "got_margin": 0.03356,
+      "swing": 0.192108,
+      "ref_len": 37,
+      "got_len": 64,
+      "prefix_text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the",
+      "text": "\n\nRomeo and Juliet's tragic love story is a classic tale of forbidden love, driven by the tragic consequences of their impulsive actions. The play's central conflict revolves around the feud between the Montagues and Capulets, and the tragic deaths of the two young lovers, ultimately leading to the downfall of their"
+     }
+    ]
+   }
+  ],
+  "conditions": [
+   "solo-warm",
+   "solo-cold",
+   "concurrent-2",
+   "concurrent-4",
+   "concurrent-8-shuffled"
+  ],
+  "repeats": 3,
+  "max_tokens": 64,
+  "tie_eps": 0.1,
+  "summary": {
+   "by_condition": {
+    "solo-warm": {
+     "runs": 12,
+     "identical": 9,
+     "near-tie": 0,
+     "divergence": 3
+    },
+    "solo-cold": {
+     "runs": 12,
+     "identical": 7,
+     "near-tie": 5,
+     "divergence": 0
+    },
+    "concurrent-2": {
+     "runs": 12,
+     "identical": 9,
+     "near-tie": 3,
+     "divergence": 0
+    },
+    "concurrent-4": {
+     "runs": 12,
+     "identical": 7,
+     "near-tie": 4,
+     "divergence": 1
+    },
+    "concurrent-8-shuffled": {
+     "runs": 12,
+     "identical": 5,
+     "near-tie": 6,
+     "divergence": 1
+    }
+   },
+   "total": {
+    "runs": 60,
+    "identical": 37,
+    "near-tie": 18,
+    "divergence": 5
+   },
+   "unstable": true
+  }
+ }
+}

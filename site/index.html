@@ -1,0 +1,112 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>flipbisect: git bisect for LLM nondeterminism</title>
+<meta name="description" content="Find the server setting that makes temperature-0 LLM outputs diverge.">
+<style>
+:root{--fg:#ededed;--mute:#8a8a8a;--line:#1f1f1f;--card:#0a0a0a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#000;color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,Inter,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+#glow{position:fixed;inset:0;pointer-events:none;background:radial-gradient(600px circle at var(--x,50%) var(--y,20%),rgba(255,255,255,.07),transparent 60%);z-index:0}
+canvas#grid{position:fixed;inset:0;z-index:0;pointer-events:none}
+nav,main,footer{position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;height:64px;font-size:14px}
+nav b{font-weight:600;letter-spacing:-.01em}nav a{color:var(--mute);text-decoration:none;margin-left:24px;transition:color .2s}nav a:hover{color:#fff}
+.hero{padding:120px 0 64px;text-align:center}
+.eyebrow{display:inline-block;border:1px solid #2a2a2a;border-radius:999px;padding:4px 14px;font-size:13px;color:var(--mute);margin-bottom:28px}
+h1{font-size:clamp(40px,7vw,76px);line-height:1.02;letter-spacing:-.045em;margin:0 0 22px;font-weight:600;background:linear-gradient(180deg,#fff 30%,#777);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mute);font-size:19px;max-width:620px;margin:0 auto 40px}
+.cta{display:inline-flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{padding:12px 22px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:500;transition:transform .2s,background .2s}
+.btn.p{background:#fff;color:#000}.btn.s{border:1px solid #333;color:#fff}.btn:hover{transform:translateY(-1px)}
+.term{margin:72px auto 0;max-width:760px;text-align:left;background:rgba(10,10,10,.85);border:1px solid var(--line);border-radius:16px;padding:22px 24px;font:13.5px/1.75 "SF Mono",ui-monospace,Menlo,monospace;backdrop-filter:blur(8px);box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.term .d{color:#555}.term .m{color:var(--mute)}
+.row{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.tok{padding:1px 6px;border-radius:5px;background:#111;border:1px solid #1d1d1d;opacity:0;transform:translateY(4px);transition:all .35s}
+.tok.on{opacity:1;transform:none}.tok.a{background:#fff;color:#000;border-color:#fff}.tok.b{border-color:#fff}
+section{padding:96px 0 0}
+h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;margin:0 0 18px}
+h3{font-size:clamp(28px,4vw,40px);letter-spacing:-.03em;line-height:1.1;margin:0 0 40px;font-weight:600;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;overflow:hidden;transition:border-color .3s,transform .3s}
+.card:before{content:"";position:absolute;inset:0;background:radial-gradient(360px circle at var(--cx,50%) var(--cy,50%),rgba(255,255,255,.08),transparent 60%);opacity:0;transition:opacity .3s}
+.card:hover{border-color:#333}.card:hover:before{opacity:1}
+.card .n{font:12px "SF Mono",ui-monospace,monospace;color:#555}.card h4{margin:10px 0 8px;font-size:18px;font-weight:600;letter-spacing:-.01em}.card p{margin:0;color:var(--mute);font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:15px}td,th{padding:14px 10px;border-bottom:1px solid var(--line);text-align:left}
+th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:500}
+td.k{font-family:"SF Mono",ui-monospace,monospace;font-size:14px}
+.bar{height:6px;background:#161616;border-radius:3px;overflow:hidden;width:140px}.bar i{display:block;height:100%;background:#fff;width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.big{font-size:20px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+.big code{background:#fff;color:#000;padding:2px 8px;border-radius:6px;font-size:17px}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .8s,transform .8s}.reveal.in{opacity:1;transform:none}
+.links a{color:#fff}
+footer{padding:120px 24px 60px;color:#555;font-size:13px}
+@media(max-width:600px){.hero{padding:72px 0 40px}.bar{width:70px}td,th{padding:12px 6px;font-size:13px}nav a{margin-left:14px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.tok,.reveal{opacity:1;transform:none}}
+</style></head><body>
+<canvas id="grid"></canvas><div id="glow"></div>
+<nav><b>flipbisect</b><div><a href="#findings">Findings</a><a href="reports/probe.html">Report</a><a href="https://github.com/gfxroy/flipbisect">GitHub</a></div></nav>
+<main>
+<div class="hero">
+  <span class="eyebrow">git bisect for LLM nondeterminism</span>
+  <h1>Same prompt.<br>Temperature 0.<br>Different answer.</h1>
+  <p class="sub">flipbisect replays your request until the answers split, shows the exact token where they split, then toggles server settings until it finds the one that's causing it.</p>
+  <div class="cta"><a class="btn p" href="reports/probe.html">See a real report</a><a class="btn s" href="https://github.com/gfxroy/flipbisect">View on GitHub</a></div>
+  <div class="term" id="term">
+    <div class="d">Explain why the sky is blue in three sentences.</div>
+    <div class="row" id="r1"></div>
+    <div class="row" id="r2"></div>
+    <div class="m" id="verdict" style="opacity:0;transition:opacity .5s">first split · token 4 · near-tie, margin 0.082 nats · 4 concurrent requests · llama.cpp CPU</div>
+  </div>
+</div>
+
+<section class="reveal">
+  <h2>How it works</h2><h3>Three steps from "it's random" to the exact cause.</h3>
+  <div class="grid">
+    <div class="card"><div class="n">01</div><h4>Replay</h4><p>It sends the same temperature-0 request solo, after a cache flush, and inside bursts of 2, 4 and 8 mixed-length neighbours. It works with any OpenAI-compatible server.</p></div>
+    <div class="card"><div class="n">02</div><h4>Find the split</h4><p>It finds the first token where the answers differ. It reads the top logprobs there, so a harmless near-tie is labelled differently from a real divergence.</p></div>
+    <div class="card"><div class="n">03</div><h4>Bisect the settings</h4><p>It relaunches the server with different settings and uses delta debugging to narrow them down to the smallest change that still breaks determinism.</p></div>
+  </div>
+</section>
+
+<section id="findings" class="reveal">
+  <h2>Real findings</h2><h3>llama.cpp on CPU, SmolLM2-360M Q4: who flips the output?</h3>
+  <table>
+    <tr><th>One change from defaults</th><th>Unstable runs</th><th></th></tr>
+    <tr><td class="k">defaults (prompt cache on)</td><td>18 / 32</td><td><div class="bar"><i data-w="56"></i></div></td></tr>
+    <tr><td class="k">parallel=1</td><td>3 / 32</td><td><div class="bar"><i data-w="9"></i></div></td></tr>
+    <tr><td class="k">threads=8 (all cores)</td><td>22 / 32</td><td><div class="bar"><i data-w="69"></i></div></td></tr>
+    <tr><td class="k">cache_prompt=false</td><td>0 / 32</td><td><div class="bar"><i data-w="0"></i></div></td></tr>
+    <tr><td class="k">flash_attn=on</td><td>0 / 32</td><td><div class="bar"><i data-w="0"></i></div></td></tr>
+  </table>
+  <p style="color:var(--mute);margin:20px 0 40px">Even a plain solo repeat split from the first request, because a warm prompt cache computes the prefix in a different shape.</p>
+  <div class="big">Bisect over 5 changed settings → minimal cause: <code>threads=8</code></div>
+  <p class="links" style="color:var(--mute);margin-top:24px">Full reports: <a href="reports/probe.html">probe</a> · <a href="reports/sweep.html">sweep</a> · <a href="reports/sweep-nocache.html">sweep, cache off</a> · <a href="reports/bisect.html">bisect</a></p>
+</section>
+
+<section class="reveal">
+  <h2>Honest limits</h2><h3>What this does and doesn't prove.</h3>
+  <div class="grid">
+    <div class="card"><h4>Zero flips isn't proof</h4><p>Rare flips (about 1–2%) showed up in configs that looked stable. Use enough repeats.</p></div>
+    <div class="card"><h4>One model, one box</h4><p>It's a demo on CPU, not a benchmark. The vLLM and SGLang backends are written but not yet run on a GPU.</p></div>
+    <div class="card"><h4>First split only</h4><p>It finds where and which setting, not which layer or kernel.</p></div>
+  </div>
+</section>
+</main>
+<footer>flipbisect · MIT · built by <a style="color:#888" href="https://github.com/gfxroy">Aaditya Roy</a></footer>
+<script>
+const R=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const g=document.getElementById('glow');addEventListener('pointermove',e=>{g.style.setProperty('--x',e.clientX+'px');g.style.setProperty('--y',e.clientY+'px')});
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--cx',e.clientX-r.left+'px');c.style.setProperty('--cy',e.clientY-r.top+'px')}));
+// dot grid that leans toward the cursor
+const cv=document.getElementById('grid'),cx=cv.getContext('2d');let W,H,mx=-999,my=-999;
+function rs(){W=cv.width=innerWidth*devicePixelRatio;H=cv.height=innerHeight*devicePixelRatio;cv.style.width=innerWidth+'px';cv.style.height=innerHeight+'px'}rs();addEventListener('resize',rs);
+addEventListener('pointermove',e=>{mx=e.clientX*devicePixelRatio;my=e.clientY*devicePixelRatio});
+function draw(){cx.clearRect(0,0,W,H);const s=28*devicePixelRatio;for(let x=s/2;x<W;x+=s)for(let y=s/2;y<H;y+=s){const dx=mx-x,dy=my-y,d=Math.hypot(dx,dy),f=Math.max(0,1-d/(220*devicePixelRatio));cx.fillStyle=`rgba(255,255,255,${.06+f*.5})`;cx.beginPath();cx.arc(x+dx*f*.12,y+dy*f*.12,(0.8+f*1.2)*devicePixelRatio,0,7);cx.fill()}if(!R)requestAnimationFrame(draw)}draw();
+// animated token split (real tokens from the probe run)
+const pre=["The"," sky"],a=[" is"," blue"," because"," of"],b=[" appears"," blue"," because"," of"];
+function put(row,t,cls,d){const s=document.createElement('span');s.className='tok '+(cls||'');s.textContent=t;row.appendChild(s);setTimeout(()=>s.classList.add('on'),R?0:d)}
+function play(){const r1=document.getElementById('r1'),r2=document.getElementById('r2');r1.innerHTML=r2.innerHTML='';let d=200;
+pre.forEach(t=>{put(r1,t,'',d);put(r2,t,'',d);d+=180});a.forEach((t,i)=>{put(r1,t,i?'':'a',d);put(r2,b[i],i?'':'b',d);d+=260});
+setTimeout(()=>document.getElementById('verdict').style.opacity=1,R?0:d)}play();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.bar i').forEach(i=>i.style.width=i.dataset.w+'%')}}),{threshold:.2});
+document.querySelectorAll('.reveal').forEach(s=>io.observe(s));
+</script></body></html>

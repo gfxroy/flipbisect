@@ -1,0 +1,43 @@
+· launching llamacpp cache_prompt=False
+  -> 0/32 unstable runs (39.0s)
+· launching llamacpp threads=1, cache_prompt=False
+  -> 1/32 unstable runs, 0/4 prompts differ from baseline (131.7s)
+· launching llamacpp threads=2, cache_prompt=False
+  -> 0/32 unstable runs, 0/4 prompts differ from baseline (68.0s)
+· launching llamacpp threads=8, cache_prompt=False
+  -> 10/32 unstable runs, 0/4 prompts differ from baseline (26.3s)
+· launching llamacpp batch=512, cache_prompt=False
+  -> 0/32 unstable runs, 0/4 prompts differ from baseline (38.1s)
+· launching llamacpp batch=64, cache_prompt=False
+  -> 0/32 unstable runs, 0/4 prompts differ from baseline (39.8s)
+· launching llamacpp ubatch=128, cache_prompt=False
+  -> 0/32 unstable runs, 0/4 prompts differ from baseline (35.5s)
+· launching llamacpp ubatch=32, cache_prompt=False
+  -> 0/32 unstable runs, 0/4 prompts differ from baseline (39.4s)
+· launching llamacpp parallel=1, cache_prompt=False
+  -> 2/32 unstable runs, 0/4 prompts differ from baseline (35.9s)
+· launching llamacpp parallel=2, cache_prompt=False
+  -> 1/32 unstable runs, 0/4 prompts differ from baseline (36.3s)
+· launching llamacpp parallel=8, cache_prompt=False
+  -> 1/32 unstable runs, 0/4 prompts differ from baseline (37.4s)
+· launching llamacpp (defaults)
+  -> 8/32 unstable runs, 1/4 prompts differ from baseline (22.5s)
+· launching llamacpp cache_prompt=False, flash_attn=on
+  -> 1/32 unstable runs, 3/4 prompts differ from baseline (32.4s)
+· launching llamacpp cache_prompt=False, cache_type_k=q8_0
+  -> 2/32 unstable runs, 2/4 prompts differ from baseline (35.8s)
+(defaults)                   unstable 0/32  differs-from-baseline 0
+threads=1                    unstable 1/32  differs-from-baseline 0
+threads=2                    unstable 0/32  differs-from-baseline 0
+threads=8                    unstable 10/32  differs-from-baseline 0
+batch=512                    unstable 0/32  differs-from-baseline 0
+batch=64                     unstable 0/32  differs-from-baseline 0
+ubatch=128                   unstable 0/32  differs-from-baseline 0
+ubatch=32                    unstable 0/32  differs-from-baseline 0
+parallel=1                   unstable 2/32  differs-from-baseline 0
+parallel=2                   unstable 1/32  differs-from-baseline 0
+parallel=8                   unstable 1/32  differs-from-baseline 0
+cache_prompt=True            unstable 8/32  differs-from-baseline 1
+flash_attn=on                unstable 1/32  differs-from-baseline 3
+cache_type_k=q8_0            unstable 2/32  differs-from-baseline 2
+wrote runs/sweep-nocache.json runs/sweep-nocache.html

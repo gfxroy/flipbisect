@@ -1,0 +1,23 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -e '.[test]'
+      - name: fetch llama.cpp CPU build + tiny model
+        run: |
+          mkdir -p .bin .models
+          curl -sL https://github.com/ggml-org/llama.cpp/releases/download/b12015/llama-b12015-bin-ubuntu-x64.tar.gz | tar xz -C .bin
+          curl -sL -o .models/smol360.gguf https://huggingface.co/bartowski/SmolLM2-360M-Instruct-GGUF/resolve/main/SmolLM2-360M-Instruct-Q4_K_M.gguf
+      - run: pytest -q
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: gitleaks/gitleaks-action@v2
+        env: {GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}

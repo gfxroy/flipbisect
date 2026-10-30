@@ -1,0 +1,240 @@
+{
+ "kind": "sweep",
+ "meta": {
+  "backend": "llamacpp",
+  "model": "smol360.gguf",
+  "prompts": 4,
+  "repeats": 2,
+  "seconds": 445.2
+ },
+ "result": [
+  {
+   "knob": null,
+   "value": null,
+   "change": "(defaults)",
+   "flips": 18,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "divergence",
+    "position": 4,
+    "ref_token": " appears",
+    "got_token": " is",
+    "margin": 0.12888,
+    "swing": 0.18886
+   },
+   "seconds": 27.6
+  },
+  {
+   "knob": "threads",
+   "value": 1,
+   "change": "threads=1",
+   "flips": 7,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "divergence",
+    "position": 12,
+    "ref_token": " the",
+    "got_token": " it",
+    "margin": 0.171724,
+    "swing": 0.260099
+   },
+   "seconds": 94.9
+  },
+  {
+   "knob": "threads",
+   "value": 2,
+   "change": "threads=2",
+   "flips": 7,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 25,
+    "ref_token": " use",
+    "got_token": " handle",
+    "margin": 0.025221,
+    "swing": 0.136078
+   },
+   "seconds": 44.3
+  },
+  {
+   "knob": "threads",
+   "value": 8,
+   "change": "threads=8",
+   "flips": 22,
+   "runs": 32,
+   "parity_differs": 2,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 4,
+    "ref_token": " appears",
+    "got_token": " is",
+    "margin": 0.004261,
+    "swing": 0.154301
+   },
+   "seconds": 19.3
+  },
+  {
+   "knob": "batch",
+   "value": 512,
+   "change": "batch=512",
+   "flips": 7,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 25,
+    "ref_token": " use",
+    "got_token": " handle",
+    "margin": 0.025221,
+    "swing": 0.136078
+   },
+   "seconds": 25.0
+  },
+  {
+   "knob": "batch",
+   "value": 64,
+   "change": "batch=64",
+   "flips": 7,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 25,
+    "ref_token": " use",
+    "got_token": " handle",
+    "margin": 0.025221,
+    "swing": 0.136078
+   },
+   "seconds": 25.6
+  },
+  {
+   "knob": "ubatch",
+   "value": 128,
+   "change": "ubatch=128",
+   "flips": 7,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 25,
+    "ref_token": " use",
+    "got_token": " handle",
+    "margin": 0.025221,
+    "swing": 0.136078
+   },
+   "seconds": 25.6
+  },
+  {
+   "knob": "ubatch",
+   "value": 32,
+   "change": "ubatch=32",
+   "flips": 15,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 18,
+    "ref_token": " result",
+    "got_token": " type",
+    "margin": 0.094765,
+    "swing": 0.290072
+   },
+   "seconds": 27.1
+  },
+  {
+   "knob": "parallel",
+   "value": 1,
+   "change": "parallel=1",
+   "flips": 3,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 25,
+    "ref_token": " use",
+    "got_token": " handle",
+    "margin": 0.025221,
+    "swing": 0.136078
+   },
+   "seconds": 25.4
+  },
+  {
+   "knob": "parallel",
+   "value": 2,
+   "change": "parallel=2",
+   "flips": 6,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 25,
+    "ref_token": " use",
+    "got_token": " handle",
+    "margin": 0.025221,
+    "swing": 0.136078
+   },
+   "seconds": 24.4
+  },
+  {
+   "knob": "parallel",
+   "value": 8,
+   "change": "parallel=8",
+   "flips": 8,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 25,
+    "ref_token": " use",
+    "got_token": " handle",
+    "margin": 0.025221,
+    "swing": 0.136078
+   },
+   "seconds": 24.5
+  },
+  {
+   "knob": "cache_prompt",
+   "value": false,
+   "change": "cache_prompt=False",
+   "flips": 0,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": null,
+   "seconds": 40.6
+  },
+  {
+   "knob": "flash_attn",
+   "value": "on",
+   "change": "flash_attn=on",
+   "flips": 0,
+   "runs": 32,
+   "parity_differs": 3,
+   "first_split": null,
+   "seconds": 18.7
+  },
+  {
+   "knob": "cache_type_k",
+   "value": "q8_0",
+   "change": "cache_type_k=q8_0",
+   "flips": 0,
+   "runs": 32,
+   "parity_differs": 3,
+   "first_split": null,
+   "seconds": 22.1
+  }
+ ]
+}

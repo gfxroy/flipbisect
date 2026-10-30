@@ -1,0 +1,216 @@
+{
+ "kind": "sweep",
+ "meta": {
+  "backend": "llamacpp",
+  "model": "smol360.gguf",
+  "prompts": 4,
+  "repeats": 2,
+  "seconds": 618.0
+ },
+ "result": [
+  {
+   "knob": null,
+   "value": null,
+   "change": "(defaults)",
+   "flips": 0,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": null,
+   "seconds": 39.0
+  },
+  {
+   "knob": "threads",
+   "value": 1,
+   "change": "threads=1",
+   "flips": 1,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": {
+    "condition": "solo-cold",
+    "verdict": "divergence",
+    "position": 12,
+    "ref_token": " the",
+    "got_token": " it",
+    "margin": 0.123278,
+    "swing": 0.297455
+   },
+   "seconds": 131.7
+  },
+  {
+   "knob": "threads",
+   "value": 2,
+   "change": "threads=2",
+   "flips": 0,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": null,
+   "seconds": 68.0
+  },
+  {
+   "knob": "threads",
+   "value": 8,
+   "change": "threads=8",
+   "flips": 10,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "divergence",
+    "position": 34,
+    "ref_token": " of",
+    "got_token": " and",
+    "margin": 0.241539,
+    "swing": 0.565628
+   },
+   "seconds": 26.3
+  },
+  {
+   "knob": "batch",
+   "value": 512,
+   "change": "batch=512",
+   "flips": 0,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": null,
+   "seconds": 38.1
+  },
+  {
+   "knob": "batch",
+   "value": 64,
+   "change": "batch=64",
+   "flips": 0,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": null,
+   "seconds": 39.8
+  },
+  {
+   "knob": "ubatch",
+   "value": 128,
+   "change": "ubatch=128",
+   "flips": 0,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": null,
+   "seconds": 35.5
+  },
+  {
+   "knob": "ubatch",
+   "value": 32,
+   "change": "ubatch=32",
+   "flips": 0,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": null,
+   "seconds": 39.4
+  },
+  {
+   "knob": "parallel",
+   "value": 1,
+   "change": "parallel=1",
+   "flips": 2,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": {
+    "condition": "concurrent-4",
+    "verdict": "near-tie",
+    "position": 25,
+    "ref_token": " use",
+    "got_token": " handle",
+    "margin": 0.025221,
+    "swing": 0.027207
+   },
+   "seconds": 35.9
+  },
+  {
+   "knob": "parallel",
+   "value": 2,
+   "change": "parallel=2",
+   "flips": 1,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": {
+    "condition": "concurrent-4",
+    "verdict": "divergence",
+    "position": 34,
+    "ref_token": " of",
+    "got_token": " and",
+    "margin": 0.241539,
+    "swing": 0.406853
+   },
+   "seconds": 36.3
+  },
+  {
+   "knob": "parallel",
+   "value": 8,
+   "change": "parallel=8",
+   "flips": 1,
+   "runs": 32,
+   "parity_differs": 0,
+   "first_split": {
+    "condition": "concurrent-8-shuffled",
+    "verdict": "divergence",
+    "position": 22,
+    "ref_token": "The",
+    "got_token": "Your",
+    "margin": 0.108326,
+    "swing": 0.250925
+   },
+   "seconds": 37.4
+  },
+  {
+   "knob": "cache_prompt",
+   "value": true,
+   "change": "cache_prompt=True",
+   "flips": 8,
+   "runs": 32,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "near-tie",
+    "position": 25,
+    "ref_token": " handle",
+    "got_token": " use",
+    "margin": 0.016533,
+    "swing": 0.198961
+   },
+   "seconds": 22.5
+  },
+  {
+   "knob": "flash_attn",
+   "value": "on",
+   "change": "flash_attn=on",
+   "flips": 1,
+   "runs": 32,
+   "parity_differs": 3,
+   "first_split": {
+    "condition": "solo-cold",
+    "verdict": "near-tie",
+    "position": 4,
+    "ref_token": " appears",
+    "got_token": " is",
+    "margin": 0.093561,
+    "swing": 0.156421
+   },
+   "seconds": 32.4
+  },
+  {
+   "knob": "cache_type_k",
+   "value": "q8_0",
+   "change": "cache_type_k=q8_0",
+   "flips": 2,
+   "runs": 32,
+   "parity_differs": 2,
+   "first_split": {
+    "condition": "concurrent-8-shuffled",
+    "verdict": "divergence",
+    "position": 34,
+    "ref_token": " of",
+    "got_token": " and",
+    "margin": 0.228651,
+    "swing": 0.255459
+   },
+   "seconds": 35.8
+  }
+ ]
+}

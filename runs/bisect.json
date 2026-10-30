@@ -1,0 +1,231 @@
+{
+ "kind": "bisect",
+ "meta": {
+  "backend": "llamacpp",
+  "model": "smol360.gguf",
+  "prompts": 4,
+  "repeats": 2,
+  "seconds": 99.5
+ },
+ "result": {
+  "predicate": "stability",
+  "good": {
+   "threads": 4,
+   "batch": 2048,
+   "ubatch": 512,
+   "parallel": 1,
+   "cache_prompt": false,
+   "flash_attn": "on",
+   "cache_type_k": "f16"
+  },
+  "bad": {
+   "threads": 8,
+   "batch": 2048,
+   "ubatch": 32,
+   "parallel": 8,
+   "cache_prompt": true,
+   "flash_attn": "off",
+   "cache_type_k": "f16"
+  },
+  "good_result": {
+   "config": {
+    "threads": 4,
+    "batch": 2048,
+    "ubatch": 512,
+    "parallel": 1,
+    "cache_prompt": false,
+    "flash_attn": "on",
+    "cache_type_k": "f16"
+   },
+   "flips": 0,
+   "runs": 32,
+   "summary": {
+    "by_condition": {
+     "solo-warm": {
+      "runs": 8,
+      "identical": 8,
+      "near-tie": 0,
+      "divergence": 0
+     },
+     "solo-cold": {
+      "runs": 8,
+      "identical": 8,
+      "near-tie": 0,
+      "divergence": 0
+     },
+     "concurrent-4": {
+      "runs": 8,
+      "identical": 8,
+      "near-tie": 0,
+      "divergence": 0
+     },
+     "concurrent-8-shuffled": {
+      "runs": 8,
+      "identical": 8,
+      "near-tie": 0,
+      "divergence": 0
+     }
+    },
+    "total": {
+     "runs": 32,
+     "identical": 32,
+     "near-tie": 0,
+     "divergence": 0
+    },
+    "unstable": false
+   },
+   "seconds": 32.5,
+   "parity_differs": 0,
+   "first_split": null
+  },
+  "bad_result": {
+   "config": {
+    "threads": 8,
+    "batch": 2048,
+    "ubatch": 32,
+    "parallel": 8,
+    "cache_prompt": true,
+    "flash_attn": "off",
+    "cache_type_k": "f16"
+   },
+   "flips": 17,
+   "runs": 32,
+   "summary": {
+    "by_condition": {
+     "solo-warm": {
+      "runs": 8,
+      "identical": 4,
+      "near-tie": 4,
+      "divergence": 0
+     },
+     "solo-cold": {
+      "runs": 8,
+      "identical": 4,
+      "near-tie": 4,
+      "divergence": 0
+     },
+     "concurrent-4": {
+      "runs": 8,
+      "identical": 4,
+      "near-tie": 4,
+      "divergence": 0
+     },
+     "concurrent-8-shuffled": {
+      "runs": 8,
+      "identical": 3,
+      "near-tie": 4,
+      "divergence": 1
+     }
+    },
+    "total": {
+     "runs": 32,
+     "identical": 15,
+     "near-tie": 16,
+     "divergence": 1
+    },
+    "unstable": true
+   },
+   "seconds": 19.5,
+   "parity_differs": 3,
+   "first_split": {
+    "condition": "concurrent-8-shuffled",
+    "verdict": "divergence",
+    "position": 34,
+    "ref_token": " of",
+    "got_token": " and",
+    "margin": 0.241539,
+    "swing": 0.519281
+   }
+  },
+  "steps": [
+   {
+    "apply": {
+     "threads": 8,
+     "ubatch": 32
+    },
+    "bad": true,
+    "flips": 18,
+    "parity_differs": 2
+   },
+   {
+    "apply": {
+     "threads": 8
+    },
+    "bad": true,
+    "flips": 20,
+    "parity_differs": 3
+   }
+  ],
+  "minimal": {
+   "threads": 8
+  },
+  "minimal_config": {
+   "threads": 8,
+   "batch": 2048,
+   "ubatch": 512,
+   "parallel": 1,
+   "cache_prompt": false,
+   "flash_attn": "on",
+   "cache_type_k": "f16"
+  },
+  "minimal_result": {
+   "config": {
+    "threads": 8,
+    "batch": 2048,
+    "ubatch": 512,
+    "parallel": 1,
+    "cache_prompt": false,
+    "flash_attn": "on",
+    "cache_type_k": "f16"
+   },
+   "flips": 20,
+   "runs": 32,
+   "summary": {
+    "by_condition": {
+     "solo-warm": {
+      "runs": 8,
+      "identical": 3,
+      "near-tie": 4,
+      "divergence": 1
+     },
+     "solo-cold": {
+      "runs": 8,
+      "identical": 2,
+      "near-tie": 4,
+      "divergence": 2
+     },
+     "concurrent-4": {
+      "runs": 8,
+      "identical": 4,
+      "near-tie": 3,
+      "divergence": 1
+     },
+     "concurrent-8-shuffled": {
+      "runs": 8,
+      "identical": 3,
+      "near-tie": 4,
+      "divergence": 1
+     }
+    },
+    "total": {
+     "runs": 32,
+     "identical": 12,
+     "near-tie": 15,
+     "divergence": 5
+    },
+    "unstable": true
+   },
+   "seconds": 22.7,
+   "parity_differs": 3,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "divergence",
+    "position": 4,
+    "ref_token": " is",
+    "got_token": " appears",
+    "margin": 0.296463,
+    "swing": 0.390024
+   }
+  }
+ }
+}

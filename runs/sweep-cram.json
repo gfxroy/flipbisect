@@ -1,0 +1,94 @@
+{
+ "kind": "sweep",
+ "meta": {
+  "backend": "llamacpp",
+  "model": "smol360.gguf",
+  "prompts": 4,
+  "repeats": 3,
+  "seconds": 456.5
+ },
+ "result": [
+  {
+   "knob": null,
+   "value": null,
+   "change": "(defaults)",
+   "flips": 1,
+   "runs": 48,
+   "parity_differs": 0,
+   "first_split": {
+    "condition": "concurrent-4",
+    "verdict": "divergence",
+    "position": 22,
+    "ref_token": "The",
+    "got_token": "Your",
+    "margin": 0.108326,
+    "swing": 0.111305
+   },
+   "seconds": 55.5
+  },
+  {
+   "knob": "cache_ram",
+   "value": 0,
+   "change": "cache_ram=0",
+   "flips": 1,
+   "runs": 48,
+   "parity_differs": 0,
+   "first_split": {
+    "condition": "solo-cold",
+    "verdict": "divergence",
+    "position": 22,
+    "ref_token": "The",
+    "got_token": "Your",
+    "margin": 0.108326,
+    "swing": 0.12319
+   },
+   "seconds": 55.6
+  },
+  {
+   "knob": "threads",
+   "value": 1,
+   "change": "threads=1",
+   "flips": 0,
+   "runs": 48,
+   "parity_differs": 0,
+   "first_split": null,
+   "seconds": 188.6
+  },
+  {
+   "knob": "threads",
+   "value": 2,
+   "change": "threads=2",
+   "flips": 2,
+   "runs": 48,
+   "parity_differs": 0,
+   "first_split": {
+    "condition": "concurrent-8-shuffled",
+    "verdict": "divergence",
+    "position": 34,
+    "ref_token": " of",
+    "got_token": " and",
+    "margin": 0.241539,
+    "swing": 0.572935
+   },
+   "seconds": 101.1
+  },
+  {
+   "knob": "threads",
+   "value": 8,
+   "change": "threads=8",
+   "flips": 20,
+   "runs": 48,
+   "parity_differs": 1,
+   "first_split": {
+    "condition": "solo-warm",
+    "verdict": "divergence",
+    "position": 34,
+    "ref_token": " of",
+    "got_token": " and",
+    "margin": 0.115625,
+    "swing": 0.227308
+   },
+   "seconds": 55.6
+  }
+ ]
+}
