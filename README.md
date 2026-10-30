@@ -55,7 +55,7 @@ Setup: SmolLM2-360M-Instruct Q4_K_M, llama.cpp `b12015` CPU build, an 8-vCPU Lin
 | Sweep from defaults | Turning **`cache_prompt` off** took unstable runs from 18/32 to **0/32**, and so did `flash_attn=on` and `cache_type_k=q8_0`. Changing `threads, batch, ubatch, parallel` alone did not fix it (`parallel=1` still had 3/32). |
 | Sweep with `cache_prompt=false` | Mostly stable (0–2/32 per config), **except `threads=8`** (every core on this box): 10/32, then 20/48 in a re-run. `cache_ram=0` changed nothing. |
 | Stability bisect, 5 settings differ | ddmin needed 4 server launches to isolate **`threads=8`** alone. |
-| Parity bisect (solo outputs vs baseline) | **`flash_attn=on`** alone changes the solo greedy output on 3 of 4 prompts. `batch` and `ubatch` do not (pytest-verified). |
+| Parity bisect (solo outputs vs baseline) | **`flash_attn=on`** alone changes the solo greedy output on 3 of 4 prompts on this box (not reproduced on a GitHub Actions runner, so CPU-dependent). `batch` and `ubatch` do not. |
 | Split margins | Real splits happened at margins of 0.09–0.24 nats, with swings up to 0.57 nats. This is far more than "1e-6 float noise" suggests, plausibly because Q4 dequantisation magnifies the reordering. |
 
 Takeaways for llama.cpp on CPU: prompt-cache reuse is the main source of temp-0 instability, because a warm prefix is computed in a different batch shape than a cold one. Separately, using every core for threads made outputs unstable on this machine. The `threads=8` effect also depends on load: one later run with only 2 prompts showed no flips. I have not root-caused it.
@@ -64,7 +64,7 @@ Takeaways for llama.cpp on CPU: prompt-cache reuse is the main source of temp-0 
 
 `pytest -q` runs 9 unit tests (diff classification, both logprob formats, ddmin, command builders, HTML escaping) and 3 live tests that launch a real llama-server:
 - with prompt cache off and 1 thread, outputs stay identical under a 4-way burst;
-- a parity bisect blames `flash_attn` alone;
+- a parity bisect blames `flash_attn` alone (passes on the 8-vCPU dev box; **skips on GitHub CI runners**, where flash-attn did not change the output for those prompts, so this finding is hardware-dependent);
 - a stability bisect returns a minimal reproducer, and **skips** if the bad config happens to stay stable on the machine, since that effect depends on the hardware.
 
 CI downloads the same llama.cpp build and model.
